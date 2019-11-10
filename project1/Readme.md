@@ -1,0 +1,21 @@
+# [Udemy] The React practice course, learn by building projects [2018, ENG]
+
+<br/>
+
+### [Project 1]: The Venue
+
+<br/>
+
+### 008 Project setting up
+
+    $ npx create-react-app .
+    $ npm install --save @material-ui/core@1.2.0 @material-ui/icons@1.1.0 react-reveal@1.2.2 react-scroll@1.7.9 react-slick@0.23.1
+
+---
+
+**Marley**
+
+<a href="https://jsdev.org">jsdev.org</a>
+
+Any questions on eng: https://t.me/jsdev_org  
+Любые вопросы на русском: https://t.me/jsdev_ru
