@@ -9,7 +9,24 @@
 ### 008 Project setting up
 
     $ npx create-react-app .
-    $ npm install --save @material-ui/core@1.2.0 @material-ui/icons@1.1.0 react-reveal@1.2.2 react-scroll@1.7.9 react-slick@0.23.1
+
+    $ npm install --save @material-ui/core@1.5.1
+
+<!--
+
+    $ npm install --save  @material-ui/icons@1.1.0 react-reveal@1.2.2 react-scroll@1.7.9 react-slick@0.23.1
+
+-->
+
+<br/>
+
+### 009 Creating the Header
+
+https://material-ui.com/
+
+<br/>
+
+![Application](../img/pic-01-01.png?raw=true)
 
 ---
 
