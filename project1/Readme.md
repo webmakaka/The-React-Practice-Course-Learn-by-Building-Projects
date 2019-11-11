@@ -2,10 +2,74 @@
 
 <br/>
 
-### [Project 1]: The Venue
+## [Project 1]: The Venue
 
 **Original src:**  
 https://github.com/ferlobo1985/the_venue
+
+<br/>
+
+**Run App inside Docker Container**
+
+```
+$ docker run -it \
+    -p 80:8080 \
+    techhead/react-practice-course-project1
+```
+
+<br/>
+
+http://localhost
+
+<br/>
+
+**Run App on Minikube**
+
+<br/>
+
+    $ minikube version
+    minikube version: v1.4.0
+
+<br/>
+
+    $ minikube start
+
+<br/>
+
+    $ mkdir -p ~/projects/dev/js/react/
+    $ cd ~/projects/dev/js/react/
+    $ git clone https://github.com/marley-nodejs/The-React-Practice-Course-Learn-by-Building-Projects
+    $ cd ~/projects/dev/js/react/The-React-Practice-Course-Learn-by-Building-Projects
+
+<br/>
+
+    $ kubectl create -f ./project1/minikube
+
+<br/>
+
+    $ minikube ip
+
+<br/>
+
+    $ sudo vi /etc/hosts
+    192.168.99.150 project1.local
+
+<br/>
+
+http://project1.local
+
+<br/>
+
+![Application](../img/pic-01-final.png?raw=true)
+
+<br/>
+
+    // stop and delete minikube
+    $ minikube stop && minikube delete
+
+<br/>
+
+## Development
 
 <br/>
 
