@@ -95,6 +95,14 @@ https://github.com/rnosov/react-reveal
 
 ![Application](../img/pic-01-07.png?raw=true)
 
+<br/>
+
+### 020 Footer and Location section
+
+<br/>
+
+![Application](../img/pic-01-08.png?raw=true)
+
 ---
 
 **Marley**
