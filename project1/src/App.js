@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from 'components/header_footer/Header';
 import Featured from 'components/featured';
+import VunueNfo from 'components/venueNfo';
 import 'resources/styles.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     >
       <Header />
       <Featured />
+      <VunueNfo />
     </div>
   );
 }

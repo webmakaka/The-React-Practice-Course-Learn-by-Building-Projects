@@ -67,6 +67,14 @@ https://github.com/rnosov/react-reveal
 
 ### 015 Finishing countdown
 
+<br/>
+
+### 016 Venue NFO component
+
+<br/>
+
+![Application](../img/pic-01-05.png?raw=true)
+
 ---
 
 **Marley**
