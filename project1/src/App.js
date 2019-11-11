@@ -9,7 +9,7 @@ function App() {
   return (
     <div
       className="App"
-      style={{ height: '1200px', background: 'cornflowerblue' }}
+      style={{ height: '1500px', background: 'cornflowerblue' }}
     >
       <Header />
       <Featured />
