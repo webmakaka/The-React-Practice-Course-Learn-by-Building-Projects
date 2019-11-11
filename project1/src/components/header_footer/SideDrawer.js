@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Dreawer from '@material-ui/core/Drawer';
+import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 
 const SideDrawer = props => {
   return (
-    <Dreawer
+    <Drawer
       anchor="right"
       open={props.open}
       onClose={() => props.onClose(false)}
@@ -15,7 +15,7 @@ const SideDrawer = props => {
         <ListItem button onClick={() => console.log('Featured')}>
           Event starts in
         </ListItem>
-        <ListItem button onClick={() => console.log('Venue Info')}>
+        <ListItem button onClick={() => console.log('Venue NFO')}>
           Venue Info
         </ListItem>
         <ListItem button onClick={() => console.log('Highlights')}>
@@ -28,7 +28,7 @@ const SideDrawer = props => {
           Location
         </ListItem>
       </List>
-    </Dreawer>
+    </Drawer>
   );
 };
 

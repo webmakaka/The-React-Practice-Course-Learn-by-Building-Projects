@@ -4,7 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 import icon_calendar from 'resources/images/icons/calendar.png';
 import icon_location from 'resources/images/icons/location.png';
 
-const VenueNfo = () => {
+const VeuneNfo = () => {
   return (
     <div className="bck_black">
       <div className="center_wrapper">
@@ -51,4 +51,4 @@ const VenueNfo = () => {
   );
 };
 
-export default VenueNfo;
+export default VeuneNfo;
