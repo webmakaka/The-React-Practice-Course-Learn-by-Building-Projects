@@ -42,6 +42,16 @@ https://material-ui.com/
 
 ### 011 Finishing the Header
 
+<br/>
+
+### 013 Slider section
+
+https://github.com/akiran/react-slick
+
+<br/>
+
+![Application](../img/pic-01-03.png?raw=true)
+
 ---
 
 **Marley**
