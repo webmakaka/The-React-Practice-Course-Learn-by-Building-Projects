@@ -3,6 +3,7 @@ import Header from 'components/header_footer/Header';
 import Featured from 'components/featured';
 import VunueNfo from 'components/venueNfo';
 import HighLights from 'components/highlights';
+import Pricing from 'components/pricing';
 import 'resources/styles.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Featured />
       <VunueNfo />
       <HighLights />
+      <Pricing />
     </div>
   );
 }

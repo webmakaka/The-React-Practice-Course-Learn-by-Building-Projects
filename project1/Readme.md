@@ -87,6 +87,14 @@ https://github.com/rnosov/react-reveal
 
 ### 018 Button reusable component
 
+<br/>
+
+### 019 Adding prices
+
+<br/>
+
+![Application](../img/pic-01-07.png?raw=true)
+
 ---
 
 **Marley**
