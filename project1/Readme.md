@@ -12,11 +12,12 @@
 
     $ npm install --save \
     @material-ui/core@1.5.1 \
-    @material-ui/icons@1.1.0
+    @material-ui/icons@1.1.0 \
+    react-reveal@1.2.2
 
 <!--
 
-     react-reveal@1.2.2 react-scroll@1.7.9 react-slick@0.23.1
+     react-scroll@1.7.9 react-slick@0.23.1
 
 -->
 
@@ -51,6 +52,16 @@ https://github.com/akiran/react-slick
 <br/>
 
 ![Application](../img/pic-01-03.png?raw=true)
+
+<br/>
+
+### 014 Adding a countdown
+
+https://github.com/rnosov/react-reveal
+
+<br/>
+
+![Application](../img/pic-01-04.png?raw=true)
 
 ---
 
