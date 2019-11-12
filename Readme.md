@@ -8,6 +8,10 @@
 
 ### [Project 1: The Venue](./project1/Readme.md)
 
+<br/>
+
+### [Project 2: Man City](./project2/Readme.md)
+
 ---
 
 **Marley**
