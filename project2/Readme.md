@@ -27,6 +27,14 @@
         react-reveal@1.2.2 \
         react-router-dom@4.3.1
 
+<br/>
+
+### 026 Adding a Header
+
+<br/>
+
+![Application](../img/pic-02-01.png?raw=true)
+
 ---
 
 **Marley**
