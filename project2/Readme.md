@@ -35,6 +35,14 @@
 
 ![Application](../img/pic-02-01.png?raw=true)
 
+<br/>
+
+### 027 Finishing Header adding Footer
+
+<br/>
+
+![Application](../img/pic-02-02.png?raw=true)
+
 ---
 
 **Marley**
