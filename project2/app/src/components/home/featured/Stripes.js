@@ -42,11 +42,11 @@ class Stripes extends Component {
           top: 0
         }}
         enter={{
-          background: [stripe.background],
+          background: stripe.background,
           opacity: [1],
-          left: [stripe.left],
-          rotate: [stripe.rotate],
-          top: [stripe.top],
+          left: stripe.left,
+          rotate: stripe.rotate,
+          top: stripe.top,
           timing: { delay: stripe.delay, duration: 200, easePolyOut }
         }}
       >

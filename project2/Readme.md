@@ -19,13 +19,13 @@
     $ npx create-react-app .
 
     $ npm install --save \
-        @material-ui/core@1.5.1 \
-        d3-ease@1.0.3 \
+        @material-ui/core@4.6.1 \
+        d3-ease@1.0.5 \
         firebase@7.4.0 \
-        react-firebase-file-uploader@2.4.1 \
-        react-move@2.7.0 \
+        react-firebase-file-uploader@2.4.3 \
+        react-move@6.0.0 \
         react-reveal@1.2.2 \
-        react-router-dom@4.3.1
+        react-router-dom@5.1.2
 
 <br/>
 
