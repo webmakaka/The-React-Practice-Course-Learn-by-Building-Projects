@@ -5,6 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 import Routes from 'routes';
 import 'resources/css/app.css';
 
+import 'myFirebase';
+
 const App = () => {
   return (
     <BrowserRouter>

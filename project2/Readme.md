@@ -21,7 +21,7 @@
     $ npm install --save \
         @material-ui/core@1.5.1 \
         d3-ease@1.0.3 \
-        firebase@5.0.4 \
+        firebase@7.4.0 \
         react-firebase-file-uploader@2.4.1 \
         react-move@2.7.0 \
         react-reveal@1.2.2 \
@@ -76,6 +76,20 @@ https://github.com/react-tools/react-move
 <br/>
 
 ![Application](../img/pic-02-06.png?raw=true)
+
+<br/>
+
+### 032 Adding Firebase
+
+console.firebase.google.com
+
+Add project: "The React Practice Course"
+
+Database --> Realtime Database --> Start in test mode
+
+Database --> import --> data/032 m-city-export.json
+
+Add Firebase to your web app
 
 ---
 
