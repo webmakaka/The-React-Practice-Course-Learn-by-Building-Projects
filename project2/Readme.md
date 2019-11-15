@@ -95,6 +95,14 @@ Add Firebase to your web app
 
 ### 033 Home Adding the Match blocks component
 
+<br/>
+
+### 034 Home Finishing the Match blocks component
+
+<br/>
+
+![Application](../img/pic-02-07.png?raw=true)
+
 ---
 
 **Marley**
