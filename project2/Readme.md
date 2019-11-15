@@ -53,6 +53,14 @@ https://github.com/react-tools/react-move
 
 ![Application](../img/pic-02-03.png?raw=true)
 
+<br/>
+
+### 029 Home featured Animation...continued
+
+<br/>
+
+![Application](../img/pic-02-04.png?raw=true)
+
 ---
 
 **Marley**
