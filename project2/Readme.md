@@ -61,6 +61,14 @@ https://github.com/react-tools/react-move
 
 ![Application](../img/pic-02-04.png?raw=true)
 
+<br/>
+
+### 030 Home Finishing featured Animation
+
+<br/>
+
+![Application](../img/pic-02-05.png?raw=true)
+
 ---
 
 **Marley**
