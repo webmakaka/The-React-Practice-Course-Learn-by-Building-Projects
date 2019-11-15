@@ -16,15 +16,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const firebaseDB = firebase.database();
+const firebaseMatches = firebaseDB.ref('matches');
 
-firebaseDB
-  .ref('matches')
-  .once('value')
-  .then(snapshot => {
-    console.log('WE ARE HERE');
-    console.log(snapshot.val());
-  })
-  .catch(function(e) {
-    console.log('WE ARE NOT HERE');
-    console.error(e); // "oh, no!"
-  });
+export { firebase, firebaseMatches };
