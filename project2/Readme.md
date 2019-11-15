@@ -69,6 +69,14 @@ https://github.com/react-tools/react-move
 
 ![Application](../img/pic-02-05.png?raw=true)
 
+<br/>
+
+### 031 Tags RC
+
+<br/>
+
+![Application](../img/pic-02-06.png?raw=true)
+
 ---
 
 **Marley**

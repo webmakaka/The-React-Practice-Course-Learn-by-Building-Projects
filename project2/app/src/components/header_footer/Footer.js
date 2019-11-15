@@ -1,5 +1,5 @@
 import React from 'react';
-import { CityLogo } from 'components/ui/Icons';
+import { CityLogo } from 'components/ui/icons';
 
 const Footer = () => {
   return (
