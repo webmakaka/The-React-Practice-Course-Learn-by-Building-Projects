@@ -103,6 +103,14 @@ Add Firebase to your web app
 
 ![Application](../img/pic-02-07.png?raw=true)
 
+<br/>
+
+### 035 Home Meet the players component
+
+<br/>
+
+![Application](../img/pic-02-08.png?raw=true)
+
 ---
 
 **Marley**
