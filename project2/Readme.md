@@ -115,6 +115,14 @@ Add Firebase to your web app
 
 ### 036 Home Finishing player card
 
+<br/>
+
+### 037 Home Finishing player card...continued
+
+<br/>
+
+![Application](../img/pic-02-09.png?raw=true)
+
 ---
 
 **Marley**
