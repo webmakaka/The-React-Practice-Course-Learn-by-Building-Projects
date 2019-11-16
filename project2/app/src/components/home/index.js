@@ -2,6 +2,7 @@ import React from 'react';
 import Featured from 'components/home/featured/';
 import Matches from 'components/home/matches/';
 import MeetPlayers from 'components/meet_players/';
+import Promotion from 'components/home/promotion/';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Featured />
       <Matches />
       <MeetPlayers />
+      <Promotion />
     </div>
   );
 };

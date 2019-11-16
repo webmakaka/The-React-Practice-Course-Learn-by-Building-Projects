@@ -123,6 +123,10 @@ Add Firebase to your web app
 
 ![Application](../img/pic-02-09.png?raw=true)
 
+<br/>
+
+### 038 Home Enroll reveal component
+
 ---
 
 **Marley**

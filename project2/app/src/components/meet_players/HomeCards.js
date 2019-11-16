@@ -3,7 +3,6 @@ import { easePolyOut } from 'd3-ease';
 import Animate from 'react-move/Animate';
 
 import PlayerCard from 'components/meet_players/PlayerCard';
-
 import Otamendi from 'resources/images/players/Otamendi.png';
 
 class HomeCards extends Component {
