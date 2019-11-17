@@ -147,6 +147,14 @@ Add Firebase to your web app
 
 ![Application](../img/pic-02-11.png?raw=true)
 
+<br/>
+
+### 042 Home Finishing Enroll and form fields
+
+<br/>
+
+![Application](../img/pic-02-12.png?raw=true)
+
 ---
 
 **Marley**

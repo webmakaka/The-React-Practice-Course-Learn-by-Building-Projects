@@ -4,6 +4,8 @@ import Fade from 'react-reveal/Fade';
 import FormField from 'components/ui/FormField';
 import { validate } from 'components/ui/misc';
 
+import { firebasePromotions } from 'myFirebase';
+
 class Enroll extends Component {
   state = {
     formError: false,
@@ -46,6 +48,32 @@ class Enroll extends Component {
     });
   }
 
+  resetFormSuccess(type) {
+    const newFormData = { ...this.state.formData };
+
+    for (let key in newFormData) {
+      newFormData[key].value = '';
+      newFormData[key].valid = false;
+      newFormData[key].validationMessage = '';
+    }
+
+    this.setState({
+      formError: false,
+      formData: newFormData,
+      formSuccess: type ? 'Congratulations!' : 'Email already on the database!'
+    });
+
+    this.successMessage();
+  }
+
+  successMessage() {
+    setTimeout(() => {
+      this.setState({
+        formSuccess: ''
+      });
+    }, 2000);
+  }
+
   submitForm(event) {
     event.preventDefault();
     let dataToSubmit = {};
@@ -57,7 +85,18 @@ class Enroll extends Component {
     }
 
     if (formIsValid) {
-      console.log(dataToSubmit);
+      firebasePromotions
+        .orderByChild('email')
+        .equalTo(dataToSubmit.email)
+        .once('value')
+        .then(snapshot => {
+          if (snapshot.val() === null) {
+            firebasePromotions.push(dataToSubmit);
+            this.resetFormSuccess(true);
+          } else {
+            this.resetFormSuccess(false);
+          }
+        });
     } else {
       this.setState({
         formError: true
@@ -83,7 +122,13 @@ class Enroll extends Component {
                   Something is wrong, try again!
                 </div>
               ) : null}
+              <div className="success_label">{this.state.formSuccess}</div>
               <button onClick={event => this.submitForm(event)}>Enroll</button>
+              <div className="enroll_discl">
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old.
+              </div>
             </div>
           </form>
         </div>
