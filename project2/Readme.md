@@ -127,6 +127,14 @@ Add Firebase to your web app
 
 ### 038 Home Enroll reveal component
 
+<br/>
+
+![Application](../img/pic-02-10.png?raw=true)
+
+<br/>
+
+### 039 Home Enroll starting with form fields
+
 ---
 
 **Marley**

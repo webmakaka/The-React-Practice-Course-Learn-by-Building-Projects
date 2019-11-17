@@ -1,5 +1,6 @@
 import React from 'react';
 import PromotionAnimation from 'components/home/promotion/PromotionAnimation';
+import Enroll from 'components/home/promotion/Enroll';
 
 const Promotion = () => {
   return (
@@ -11,6 +12,7 @@ const Promotion = () => {
     >
       <div className="container">
         <PromotionAnimation />
+        <Enroll />
       </div>
     </div>
   );
