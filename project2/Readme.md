@@ -218,6 +218,14 @@ Firebase --> Authentication --> Users --> Add user
 
 ![Application](../img/pic-02-p2-17.png?raw=true)
 
+<br/>
+
+### 051 Admin Adding functions
+
+<br/>
+
+![Application](../img/pic-02-p2-18.png?raw=true)
+
 ---
 
 **Marley**
