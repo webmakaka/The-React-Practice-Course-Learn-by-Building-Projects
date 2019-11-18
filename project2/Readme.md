@@ -178,6 +178,14 @@ Firebase --> Authentication --> Users --> Add user
 
 ### 044 Auth Finishing Login
 
+<br/>
+
+### 045 Auth Creating a Dashboard
+
+<br/>
+
+![Application](../img/pic-02-p2-14.png?raw=true)
+
 ---
 
 **Marley**
