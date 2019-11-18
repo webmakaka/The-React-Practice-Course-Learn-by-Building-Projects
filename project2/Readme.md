@@ -174,6 +174,10 @@ Firebase --> Authentication --> Users --> Add user
 
 ![Application](../img/pic-02-p2-13.png?raw=true)
 
+<br/>
+
+### 044 Auth Finishing Login
+
 ---
 
 **Marley**
