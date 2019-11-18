@@ -194,6 +194,14 @@ Firebase --> Authentication --> Users --> Add user
 
 ### 047 Auth Public Routes
 
+<br/>
+
+### 048 Admin Matches endpoint
+
+<br/>
+
+![Application](../img/pic-02-p2-15.png?raw=true)
+
 ---
 
 **Marley**
