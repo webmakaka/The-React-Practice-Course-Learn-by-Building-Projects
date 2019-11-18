@@ -210,6 +210,14 @@ Firebase --> Authentication --> Users --> Add user
 
 ![Application](../img/pic-02-p2-16.png?raw=true)
 
+<br/>
+
+### 050 Admin Edit Match - creating the form 2
+
+<br/>
+
+![Application](../img/pic-02-p2-17.png?raw=true)
+
 ---
 
 **Marley**

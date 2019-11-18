@@ -33,6 +33,27 @@ const FormField = ({ formData, id, change }) => {
           </div>
         );
         break;
+      case 'select':
+        formTemplate = (
+          <div>
+            {formData.showLabel ? (
+              <div className="label_inputs">{formData.config.label}</div>
+            ) : null}
+            <select
+              value={formData.value}
+              onChange={event => change({ event, id })}
+            >
+              <option value="">Select one</option>
+              {formData.config.options.map(item => (
+                <option key={item.key} value={item.key}>
+                  {item.value}
+                </option>
+              ))}
+            </select>
+            {showError()}
+          </div>
+        );
+        break;
       default:
         formTemplate = null;
     }
