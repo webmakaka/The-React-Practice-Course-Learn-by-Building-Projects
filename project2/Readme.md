@@ -190,6 +190,10 @@ Firebase --> Authentication --> Users --> Add user
 
 ### 046 Auth Private Routes
 
+<br/>
+
+### 047 Auth Public Routes
+
 ---
 
 **Marley**
