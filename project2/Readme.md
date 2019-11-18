@@ -186,6 +186,10 @@ Firebase --> Authentication --> Users --> Add user
 
 ![Application](../img/pic-02-p2-14.png?raw=true)
 
+<br/>
+
+### 046 Auth Private Routes
+
 ---
 
 **Marley**
