@@ -155,6 +155,25 @@ Add Firebase to your web app
 
 ![Application](../img/pic-02-12.png?raw=true)
 
+<br/>
+
+## 04 Project Two Man City - Part Two
+
+<br/>
+
+### 043 Auth Login component
+
+Firebase --> Authentication --> Sign-in method-->Email/Password --> Enable
+
+Firebase --> Authentication --> Users --> Add user
+
+    francis@gmail.com
+    password123
+
+<br/>
+
+![Application](../img/pic-02-p2-13.png?raw=true)
+
 ---
 
 **Marley**
