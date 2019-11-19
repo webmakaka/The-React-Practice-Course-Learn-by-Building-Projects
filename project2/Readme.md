@@ -254,6 +254,10 @@ Firebase --> Authentication --> Users --> Add user
 
 ![Application](../img/pic-02-p2-21.png?raw=true)
 
+<br/>
+
+### 056 Admin Players fileuploader
+
 ---
 
 **Marley**
