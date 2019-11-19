@@ -246,6 +246,14 @@ Firebase --> Authentication --> Users --> Add user
 
 ![Application](../img/pic-02-p2-20.png?raw=true)
 
+<br/>
+
+### 055 Admin Add players - creating the form
+
+<br/>
+
+![Application](../img/pic-02-p2-21.png?raw=true)
+
 ---
 
 **Marley**
