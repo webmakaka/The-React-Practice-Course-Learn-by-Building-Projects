@@ -238,6 +238,14 @@ Firebase --> Authentication --> Users --> Add user
 
 ![Application](../img/pic-02-p2-19.png?raw=true)
 
+<br/>
+
+### 054 Admin Players Endpoint
+
+<br/>
+
+![Application](../img/pic-02-p2-20.png?raw=true)
+
 ---
 
 **Marley**
