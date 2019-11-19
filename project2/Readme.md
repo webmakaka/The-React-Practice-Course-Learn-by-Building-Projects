@@ -258,6 +258,16 @@ Firebase --> Authentication --> Users --> Add user
 
 ### 056 Admin Players fileuploader
 
+console.firebase.google.com --> Storage --> todo something to create storage
+
+<br/>
+
+### 057 Admin Players fileuploader ..continued
+
+<br/>
+
+![Application](../img/pic-02-p2-22.png?raw=true)
+
 ---
 
 **Marley**
