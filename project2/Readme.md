@@ -268,6 +268,10 @@ console.firebase.google.com --> Storage --> todo something to create storage
 
 ![Application](../img/pic-02-p2-22.png?raw=true)
 
+<br/>
+
+### 058 Admin Finshing add players
+
 ---
 
 **Marley**

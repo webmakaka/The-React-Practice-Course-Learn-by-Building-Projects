@@ -38,6 +38,8 @@ class FileUploader extends Component {
           fileURL: url
         });
       });
+
+    this.props.fileName(fileName);
   };
 
   static getDerivedStateFromProps(props, state) {
@@ -50,6 +52,16 @@ class FileUploader extends Component {
 
     return null;
   }
+
+  uploadAgain = () => {
+    this.setState({
+      name: '',
+      isUploading: false,
+      fileURL: ''
+    });
+
+    this.props.resetImage();
+  };
 
   render() {
     return (
