@@ -230,6 +230,14 @@ Firebase --> Authentication --> Users --> Add user
 
 ### 052 Admin Finishing Edit matches
 
+<br/>
+
+### 053 Admin Add Match
+
+<br/>
+
+![Application](../img/pic-02-p2-19.png?raw=true)
+
 ---
 
 **Marley**

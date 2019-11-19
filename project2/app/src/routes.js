@@ -30,6 +30,13 @@ const Routes = props => {
         />
         <PrivateRoute
           {...props}
+          path="/admin_matches/edit_match"
+          exact
+          component={AddEditMatch}
+        />
+        s
+        <PrivateRoute
+          {...props}
           path="/admin_matches/edit_match/:id"
           exact
           component={AddEditMatch}
