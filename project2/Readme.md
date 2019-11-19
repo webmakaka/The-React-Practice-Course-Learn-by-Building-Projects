@@ -272,6 +272,10 @@ console.firebase.google.com --> Storage --> todo something to create storage
 
 ### 058 Admin Finshing add players
 
+<br/>
+
+### 059 Admin Edit player
+
 ---
 
 **Marley**

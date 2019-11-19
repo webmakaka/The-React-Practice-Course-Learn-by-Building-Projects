@@ -5,7 +5,7 @@ import FormField from 'components/ui/FormField';
 import FileUploader from 'components/ui/FileUploader';
 import { validate } from 'components/ui/misc';
 
-import { firebasePlayers, firebaseDB } from 'myFirebase';
+import { firebasePlayers, firebaseDB, firebase } from 'myFirebase';
 
 class AddEditPlayers extends Component {
   state = {
@@ -92,6 +92,22 @@ class AddEditPlayers extends Component {
     }
   };
 
+  updateFields = (player, playerId, formType, defaultImg) => {
+    const newFormData = { ...this.state.formData };
+
+    for (let key in newFormData) {
+      newFormData[key].value = player[key];
+      newFormData[key].valid = true;
+    }
+
+    this.setState({
+      playerId,
+      defaultImg,
+      formType,
+      formData: newFormData
+    });
+  };
+
   componentDidMount() {
     const playerId = this.props.match.params.id;
 
@@ -100,6 +116,29 @@ class AddEditPlayers extends Component {
         formType: 'Add player'
       });
     } else {
+      firebaseDB
+        .ref(`players/${playerId}`)
+        .once('value')
+        .then(snapshot => {
+          const playerData = snapshot.val();
+
+          firebase
+            .storage()
+            .ref('players')
+            .child(playerData.image)
+            .getDownloadURL()
+            .then(url => {
+              this.updateFields(playerData, playerId, 'Edit player', url);
+            })
+            .catch(e => {
+              this.updateFields(
+                { ...playerData, image: '' },
+                playerId,
+                'Edit player',
+                ''
+              );
+            });
+        });
     }
   }
 
@@ -126,6 +165,18 @@ class AddEditPlayers extends Component {
     });
   }
 
+  successForm = message => {
+    this.setState({
+      formSuccess: message
+    });
+
+    setTimeout(() => {
+      this.setState({
+        formSuccess: ''
+      });
+    }, 2000);
+  };
+
   submitForm(event) {
     event.preventDefault();
     let dataToSubmit = {};
@@ -138,10 +189,18 @@ class AddEditPlayers extends Component {
 
     if (formIsValid) {
       if (this.state.formType === 'Edit player') {
+        firebaseDB
+          .ref(`players/${this.state.playerId}`)
+          .update(dataToSubmit)
+          .then(() => {
+            this.successForm('Update correctly');
+          })
+          .catch(e => {
+            this.setState({
+              formError: true
+            });
+          });
       } else {
-        console.log('dataToSubmit');
-        console.log(dataToSubmit);
-
         firebasePlayers
           .push(dataToSubmit)
           .then(() => {
