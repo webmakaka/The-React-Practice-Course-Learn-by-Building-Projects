@@ -60,7 +60,7 @@ class Enroll extends Component {
     this.setState({
       formError: false,
       formData: newFormData,
-      formSuccess: type ? 'Congratulations!' : 'Email already on the database!'
+      formSuccess: type ? 'Congratulations!' : 'Email already in the database!'
     });
 
     this.successMessage();
