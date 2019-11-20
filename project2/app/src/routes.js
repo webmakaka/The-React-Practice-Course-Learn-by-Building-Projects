@@ -15,6 +15,7 @@ import AdminPlayers from 'components/admin/players';
 import AddEditPlayers from 'components/admin/players/AddEditPlayers';
 
 import TheTeam from 'components/the_team';
+import TheMatches from 'components/the_matches';
 
 const Routes = props => {
   return (
@@ -69,12 +70,20 @@ const Routes = props => {
           exact
           component={SignIn}
         />
+
         <PublicRoute
           {...props}
           restricted={false}
           path="/the_team"
           exact
           component={TheTeam}
+        />
+        <PublicRoute
+          {...props}
+          restricted={false}
+          path="/the_matches"
+          exact
+          component={TheMatches}
         />
         <PublicRoute
           {...props}
