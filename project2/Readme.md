@@ -325,6 +325,14 @@ Manually insert player pictures from "data/player_to_upload" to firebase databas
 
 ![Application](../img/pic-02-p3-27.png?raw=true)
 
+<br/>
+
+### 065 Adding a 404 PAGE
+
+<br/>
+
+![Application](../img/pic-02-p3-28.png?raw=true)
+
 ---
 
 **Marley**
