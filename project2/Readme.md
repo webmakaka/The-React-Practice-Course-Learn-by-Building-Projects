@@ -9,6 +9,71 @@ https://github.com/ferlobo1985/m_city
 
 <br/>
 
+**Run App inside Docker Container**
+
+```
+$ docker run -it \
+    -p 80:8080 \
+    techhead/react-practice-course-project2
+```
+
+<br/>
+
+http://localhost/sign_in
+
+```
+francis@gmail.com
+password123
+```
+
+<br/>
+
+**Run App on Minikube**
+
+<br/>
+
+    $ minikube version
+    minikube version: v1.4.0
+
+<br/>
+
+    $ minikube start
+
+<br/>
+
+    $ mkdir -p ~/projects/dev/js/react/
+    $ cd ~/projects/dev/js/react/
+    $ git clone https://github.com/marley-nodejs/The-React-Practice-Course-Learn-by-Building-Projects
+    $ cd ~/projects/dev/js/react/The-React-Practice-Course-Learn-by-Building-Projects
+
+<br/>
+
+    $ kubectl create -f ./project2/minikube
+
+<br/>
+
+    $ minikube ip
+
+<br/>
+
+    $ sudo vi /etc/hosts
+    192.168.99.150 project2.local
+
+<br/>
+
+http://project2.local
+
+<br/>
+
+![Application](../img/pic-02-final.png?raw=true)
+
+<br/>
+
+    // stop and delete minikube
+    $ minikube stop && minikube delete
+
+<br/>
+
 ## Development
 
 <br/>
@@ -335,7 +400,11 @@ Manually insert player pictures from "data/player_to_upload" to firebase databas
 
 <br/>
 
-### 066 DEPLOY to production.
+### 066 DEPLOY to production
+
+UPD. With Secure options is not working for me as i want. Ind i disabled it.
+
+<br/>
 
 console.firebase.google.com --> Database --> Rules
 
@@ -353,6 +422,21 @@ console.firebase.google.com --> Database --> Rules
 ```
 
 Publish
+
+<br/>
+
+console.firebase.google.com --> Storage --> Rules
+
+```
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+```
 
 ---
 

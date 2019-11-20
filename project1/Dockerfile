@@ -12,7 +12,7 @@ RUN npm run build
 
 FROM nginx
 
-RUN apt update && apt upgrade && \
+RUN apt update && apt upgrade -y && \
   apt install -y bash vim less curl iputils-ping dnsutils
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
