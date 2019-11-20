@@ -10,6 +10,8 @@
 
 ### [Project 2: Man City](./project2/Readme.md)
 
+### [Project 3: Waves](./project3/Readme.md)
+
 ---
 
 **Marley**

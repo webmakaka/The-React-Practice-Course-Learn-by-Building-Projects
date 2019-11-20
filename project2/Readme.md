@@ -2,7 +2,7 @@
 
 <br/>
 
-## [Project 2]: Project 2: Man City
+## [Project 2]: Man City
 
 **Original src:**  
 https://github.com/ferlobo1985/m_city
