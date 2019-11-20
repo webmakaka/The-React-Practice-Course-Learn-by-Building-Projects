@@ -333,6 +333,27 @@ Manually insert player pictures from "data/player_to_upload" to firebase databas
 
 ![Application](../img/pic-02-p3-28.png?raw=true)
 
+<br/>
+
+### 066 DEPLOY to production.
+
+console.firebase.google.com --> Database --> Rules
+
+```
+{
+  "rules": {
+    ".read": true,
+    ".write": "auth != null",
+      "promotions" : {
+        ".read": true,
+          ".write": true
+      }
+  }
+}
+```
+
+Publish
+
 ---
 
 **Marley**
