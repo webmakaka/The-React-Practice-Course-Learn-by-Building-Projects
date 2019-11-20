@@ -4,6 +4,9 @@
 
 ## [Project 2]: Project 2: Man City
 
+**Original src:**  
+https://github.com/ferlobo1985/m_city
+
 <br/>
 
 ## Development
@@ -275,6 +278,20 @@ console.firebase.google.com --> Storage --> todo something to create storage
 <br/>
 
 ### 059 Admin Edit player
+
+<br/>
+
+## 05 Project Two Man City - Part Three
+
+<br/>
+
+### 060 Creating The Team component
+
+Manually insert player pictures from "data/player_to_upload" to firebase database by "Add player" form on website.
+
+<br/>
+
+![Application](../img/pic-02-p3-23.png?raw=true)
 
 ---
 
