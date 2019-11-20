@@ -301,6 +301,14 @@ Manually insert player pictures from "data/player_to_upload" to firebase databas
 
 ![Application](../img/pic-02-p3-24.png?raw=true)
 
+<br/>
+
+### 062 The matches Adding transitions
+
+<br/>
+
+![Application](../img/pic-02-p3-25.png?raw=true)
+
 ---
 
 **Marley**
