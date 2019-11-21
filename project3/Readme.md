@@ -70,6 +70,22 @@ $ curl \
 
 ### 077 SERVER Hashing passwords
 
+<br/>
+
+### 078 SERVER Login users and creating tokens
+
+```
+// Login
+$ curl \
+-d '{
+    "email":"marley@pochta.ru",
+    "password": "password1"
+}' \
+-H "Content-Type: application/json" \
+-X POST localhost:5000/api/users/login \
+| python -m json.tool
+```
+
 ---
 
 **Marley**
