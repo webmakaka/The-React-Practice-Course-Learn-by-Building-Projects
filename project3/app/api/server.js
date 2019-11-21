@@ -3,7 +3,11 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
 
+// Models
 const { User } = require('./models/User');
+
+// Middlewares
+const { auth } = require('./middleware/auth');
 
 const app = express();
 const mongoose = require('mongoose');
@@ -14,6 +18,19 @@ mongoose.connect(process.env.DATABASE);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
+
+app.get('/api/users/auth', auth, (req, res) => {
+  res.status(200).json({
+    isAdmin: req.user.role === 0 ? false : true,
+    isAuth: true,
+    email: req.user.email,
+    name: req.user.name,
+    lastname: req.user.lastname,
+    role: req.user.role,
+    cart: req.user.cart,
+    history: req.user.history
+  });
+});
 
 app.post('/api/users/register', (req, res) => {
   const user = new User(req.body);

@@ -75,7 +75,7 @@ $ curl \
 ### 078 SERVER Login users and creating tokens
 
 ```
-// Login
+// Login and Get Token
 $ curl \
 -d '{
     "email":"marley@pochta.ru",
@@ -83,6 +83,19 @@ $ curl \
 }' \
 -H "Content-Type: application/json" \
 -X POST localhost:5000/api/users/login \
+| python -m json.tool
+```
+
+<br/>
+
+### 079 SERVER Auth route
+
+```
+// Auth
+$ curl \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X GET localhost:5000/api/users/auth \
 | python -m json.tool
 ```
 
