@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
 
+const { User } = require('./models/User');
+
 const app = express();
 const mongoose = require('mongoose');
 
@@ -13,7 +15,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-const port = process.env.PORT || 5000;
+app.post('/api/users/register', (req, res) => {
+  res.status(200);
+});
+
+const port = process.env.PORT;
 
 app.listen(port, () => {
   console.log(`Server Running at ${port}`);

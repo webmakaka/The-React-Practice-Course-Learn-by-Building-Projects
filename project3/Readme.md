@@ -44,6 +44,10 @@
 
 ### 074 SERVER .env and middleware
 
+<br/>
+
+### 075 SERVER User model
+
 ---
 
 **Marley**
