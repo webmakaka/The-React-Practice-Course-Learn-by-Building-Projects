@@ -176,6 +176,37 @@ Robo 3T -->
 - Romove all woods
 - Import woods from data/woods.txt
 
+<br/>
+
+### 083 SERVERAdding products
+
+```
+// Add Product
+$ curl \
+-d '{
+    "name":"AZ2402",
+    "description": "Super Awesome guitar",
+    "price": 2000,
+    "brand": "5b2c11d2d37177aedfd6d962",
+    "shipping": true,
+    "available": true,
+    "wood": "5b2c1c0981e781b44909627d",
+    "frets" : "24",
+    "publish": true
+}' \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X POST localhost:5000/api/product/article \
+| python -m json.tool
+```
+
+<br/>
+
+Robo 3T -->
+
+- Romove all products
+- Import woods from data/products.txt
+
 ---
 
 **Marley**

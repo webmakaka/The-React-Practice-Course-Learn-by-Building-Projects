@@ -7,6 +7,7 @@ require('dotenv').config();
 const { User } = require('./models/User');
 const { Brand } = require('./models/Brand');
 const { Wood } = require('./models/Wood');
+const { Product } = require('./models/Product');
 
 // Middlewares
 const { auth } = require('./middleware/auth');
@@ -21,6 +22,25 @@ mongoose.connect(process.env.DATABASE);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
+
+//===============================
+//            PRODUCTS
+//===============================
+
+app.post('/api/product/article', auth, admin, (req, res) => {
+  const product = new Product(req.body);
+
+  product.save((err, data) => {
+    if (err) {
+      return res.status(400).json({ success: false, err });
+    }
+
+    res.status(200).json({
+      success: true,
+      article: data
+    });
+  });
+});
 
 //===============================
 //            WOODS
