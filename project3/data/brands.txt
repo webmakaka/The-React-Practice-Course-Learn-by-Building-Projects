@@ -1,0 +1,53 @@
+{
+    "_id" : ObjectId("5b2c11481470fbaecd159dfd"),
+    "name" : "Fender",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2c11d2d37177aedfd6d962"),
+    "name" : "Ibanez",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2c1216d37177aedfd6d963"),
+    "name" : "Charvel",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2c1264d37177aedfd6d964"),
+    "name" : "Jackson",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2c1267d37177aedfd6d965"),
+    "name" : "Gibson",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2c12a1d37177aedfd6d966"),
+    "name" : "Cort",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2c12a4d37177aedfd6d967"),
+    "name" : "Schecter",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2c132406cf65af3475d28e"),
+    "name" : "Reverend",
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2c171c357cb8b03cb04342"),
+    "name" : "Ernie ball",
+    "__v" : 0
+}

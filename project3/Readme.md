@@ -112,6 +112,33 @@ $ curl \
 | python -m json.tool
 ```
 
+<br/>
+
+### 081 SERVER Brand model and routes
+
+```
+// Add Brand
+$ curl \
+-d '{
+    "name":"Gibson"
+}' \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X POST localhost:5000/api/product/brand \
+| python -m json.tool
+```
+
+```
+// Get All Brands
+$ curl \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X GET localhost:5000/app/product/brands/ \
+| python -m json.tool
+```
+
+Robo 3T Import Data from data/brands.txt
+
 ---
 
 **Marley**
