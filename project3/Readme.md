@@ -48,6 +48,24 @@
 
 ### 075 SERVER User model
 
+<br/>
+
+### 076 SERVER Registering users
+
+```
+// Register
+$ curl \
+-d '{
+    "email":"marley@pochta.ru",
+    "password": "password1",
+    "name":"marley",
+    "lastname": "marley"
+}' \
+-H "Content-Type: application/json" \
+-X POST localhost:5000/api/users/register \
+| python -m json.tool
+```
+
 ---
 
 **Marley**

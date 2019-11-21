@@ -16,7 +16,15 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.post('/api/users/register', (req, res) => {
-  res.status(200);
+  const user = new User(req.body);
+
+  user.save((err, data) => {
+    if (err) return res.json({ success: false, err });
+    return res.status(200).json({
+      success: true,
+      userdata: data
+    });
+  });
 });
 
 const port = process.env.PORT;
