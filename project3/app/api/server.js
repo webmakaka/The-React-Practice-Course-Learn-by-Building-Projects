@@ -6,6 +6,7 @@ require('dotenv').config();
 // Models
 const { User } = require('./models/User');
 const { Brand } = require('./models/Brand');
+const { Wood } = require('./models/Wood');
 
 // Middlewares
 const { auth } = require('./middleware/auth');
@@ -22,8 +23,47 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 //===============================
+//            WOODS
+//===============================
+
+app.get('/api/product/woods', (req, res) => {
+  Wood.find({}, (err, woods) => {
+    if (err) return res.status(400).send(err);
+
+    return res.status(200).json({
+      success: true,
+      woods
+    });
+  });
+});
+
+app.post('/api/product/wood', auth, admin, (req, res) => {
+  const wood = new Wood(req.body);
+  wood.save((err, data) => {
+    if (err) {
+      return res.status(400).json({ success: false, err });
+    }
+    return res.status(200).json({
+      success: true,
+      wood: data
+    });
+  });
+});
+
+//===============================
 //            BRAND
 //===============================
+
+app.get('/app/product/brands/', (req, res) => {
+  Brand.find({}, (err, brands) => {
+    if (err) return res.status(400).send(err);
+
+    return res.status(200).json({
+      success: true,
+      brands
+    });
+  });
+});
 
 app.post('/api/product/brand', auth, admin, (req, res) => {
   const brand = new Brand(req.body);
@@ -40,13 +80,6 @@ app.post('/api/product/brand', auth, admin, (req, res) => {
       success: true,
       brand: data
     });
-  });
-});
-
-app.get('/app/product/brands/', (req, res) => {
-  Brand.find({}, (err, brands) => {
-    if (err) return res.status(400).send(err);
-    res.status(200).send(brands);
   });
 });
 

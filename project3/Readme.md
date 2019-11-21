@@ -137,7 +137,44 @@ $ curl \
 | python -m json.tool
 ```
 
-Robo 3T Import Data from data/brands.txt
+<br/>
+
+Robo 3T -->
+
+- Romove all brands
+- Import brands from data/brands.txt
+
+<br/>
+
+### 082 SERVER Woods model and routes
+
+```
+// Add Wood
+$ curl \
+-d '{
+    "name":"alder"
+}' \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X POST localhost:5000/api/product/wood \
+| python -m json.tool
+```
+
+```
+// Get All Woods
+$ curl \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X GET localhost:5000/api/product/woods \
+| python -m json.tool
+```
+
+<br/>
+
+Robo 3T -->
+
+- Romove all woods
+- Import woods from data/woods.txt
 
 ---
 
