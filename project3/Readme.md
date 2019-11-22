@@ -29,7 +29,7 @@
     concurrently@3.6.0 \
     cookie-parser@1.4.3 \
     dotenv@6.0.0 \
-    express@4.16.3 \
+    express@4.17.1 \
     express-formidable@1.0.0 \
     jsonwebtoken@8.3.0 \
     moment@2.22.2 \
@@ -206,6 +206,28 @@ Robo 3T -->
 
 - Romove all products
 - Import woods from data/products.txt
+
+<br/>
+
+### 084 SERVER Getting products by ID
+
+```
+// Get Multiple Product by ids
+$ curl \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X GET localhost:5000/api/product/articles_by_id?id=5b2d3648ca6a03cd33af924c,5b2d390d7d75e2cdcb31cf07,5b2d39407d75e2cdcb31cf08'&'type=array \
+| python -m json.tool
+```
+
+```
+// Get Product by id
+$ curl \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X GET localhost:5000/api/product/articles_by_id?id=5b2d3648ca6a03cd33af924c'&'type=single \
+| python -m json.tool
+```
 
 ---
 
