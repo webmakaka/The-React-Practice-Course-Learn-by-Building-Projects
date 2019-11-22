@@ -263,6 +263,7 @@ $ curl \
     @fortawesome/fontawesome \
     @fortawesome/fontawesome-free-solid \
     @fortawesome/react-fontawesome \
+    @fortawesome/fontawesome-svg-core \
     @material-ui/core \
     axios \
     react-images \
@@ -295,6 +296,14 @@ $ curl \
     react-paypal-express-checkout@1.0.4
 
 -->
+
+<br/>
+
+### 088 CLIENT Header and footer
+
+<br/>
+
+![Application](../img/pic-03-p1-29.png?raw=true)
 
 ---
 
