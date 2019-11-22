@@ -305,6 +305,10 @@ $ curl \
 
 ![Application](../img/pic-03-p1-29.png?raw=true)
 
+<br/>
+
+### 089 CLIENT Setting Redux up.
+
 ---
 
 **Marley**
