@@ -28,8 +28,6 @@ app.use(cookieParser());
 //===============================
 
 app.get('/api/product/articles', (req, res) => {
-  console.log('start');
-
   let order = req.query.order || 'asc';
   let sortBy = req.query.sortBy || '_id';
   let limit = parseInt(req.query.limit) || 100;
@@ -40,8 +38,6 @@ app.get('/api/product/articles', (req, res) => {
     .sort([[sortBy, order]])
     .limit(limit)
     .exec((err, articles) => {
-      console.log('HI');
-
       if (err) {
         return res.status(400).json({ success: false });
       }

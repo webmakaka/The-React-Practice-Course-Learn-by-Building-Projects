@@ -251,6 +251,51 @@ $ curl \
 | python -m json.tool
 ```
 
+<br/>
+
+### 087 CLIENT Starting with the client
+
+    $ cd client
+
+    $ npx create-react-app .
+
+    $ npm install --save \
+    @fortawesome/fontawesome \
+    @fortawesome/fontawesome-free-solid \
+    @fortawesome/react-fontawesome \
+    @material-ui/core \
+    axios \
+    react-images \
+    react-redux \
+    react-router-dom \
+    react-slick \
+    redux \
+    redux-promise \
+    redux-thunk \
+    react-dropzone \
+    react-moment \
+    react-paypal-express-checkout
+
+<!--
+    $ npm install --save \
+    @fortawesome/fontawesome@1.1.8 \
+    @fortawesome/fontawesome-free-solid@5.0.13 \
+    @fortawesome/react-fontawesome@0.0.20 \
+    @material-ui/core@1.2.2 \
+    axios@0.18.0 \
+    react-images@0.5.17 \
+    react-redux@5.0.7 \
+    react-router-dom@4.3.1 \
+    react-slick@0.23.1 \
+    redux@4.0.0 \
+    redux-promise@0.6.0 \
+    redux-thunk@2.3.0 \
+    react-dropzone@4.2.12 \
+    react-moment@0.7.7 \
+    react-paypal-express-checkout@1.0.4
+
+-->
+
 ---
 
 **Marley**
