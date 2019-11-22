@@ -229,6 +229,28 @@ $ curl \
 | python -m json.tool
 ```
 
+<br/>
+
+### 085 SERVER Getting product by order.
+
+```
+// Getting product by order
+$ curl \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X GET localhost:5000/api/product/articles?sortBy=createdAt'&'order=desc'&'limit=4 \
+| python -m json.tool
+```
+
+```
+// Getting product by order
+$ curl \
+-H "Content-Type: application/json" \
+--cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
+-X GET localhost:5000/api/product/articles \
+| python -m json.tool
+```
+
 ---
 
 **Marley**
