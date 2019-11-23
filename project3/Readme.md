@@ -307,7 +307,15 @@ $ curl \
 
 <br/>
 
-### 089 CLIENT Setting Redux up.
+### 089 CLIENT Setting Redux up
+
+<br/>
+
+### 090 CLIENT Adding a Register login component
+
+<br/>
+
+![Application](../img/pic-03-p1-30.png?raw=true)
 
 ---
 
