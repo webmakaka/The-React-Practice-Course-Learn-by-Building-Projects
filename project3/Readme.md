@@ -317,6 +317,14 @@ $ curl \
 
 ![Application](../img/pic-03-p1-30.png?raw=true)
 
+<br/>
+
+### 091 CLIENTC reating the login
+
+<br/>
+
+![Application](../img/pic-03-p1-31.png?raw=true)
+
 ---
 
 **Marley**
