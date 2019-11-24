@@ -341,6 +341,14 @@ $ curl \
 
 ### 094 CLIENT Finishing the login
 
+<br/>
+
+### 095 CLIENT Creating the Register
+
+<br/>
+
+![Application](../img/pic-03-p1-33.png?raw=true)
+
 ---
 
 **Marley**
