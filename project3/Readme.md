@@ -337,6 +337,10 @@ $ curl \
 
 ### 093 CLIENT Creating the login 3
 
+<br/>
+
+### 094 CLIENT Finishing the login
+
 ---
 
 **Marley**
