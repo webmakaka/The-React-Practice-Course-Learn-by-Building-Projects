@@ -319,11 +319,19 @@ $ curl \
 
 <br/>
 
-### 091 CLIENTC reating the login
+### 091 CLIENT Creating the login
 
 <br/>
 
 ![Application](../img/pic-03-p1-31.png?raw=true)
+
+<br/>
+
+### 092 CLIENT Creating the login 2
+
+<br/>
+
+![Application](../img/pic-03-p1-32.png?raw=true)
 
 ---
 
