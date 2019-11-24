@@ -3,7 +3,11 @@ import { connect } from 'react-redux';
 
 import FormField from 'components/utils/forms/formField';
 
-import { update } from 'components/utils/forms/formActions';
+import {
+  update,
+  generateData,
+  isFormValid
+} from 'components/utils/forms/formActions';
 
 class Login extends Component {
   state = {
@@ -16,7 +20,7 @@ class Login extends Component {
         config: {
           name: 'email_input',
           type: 'email',
-          placeHolder: 'Enter your email'
+          placeholder: 'Enter your email'
         },
         validation: {
           requied: true,
@@ -32,7 +36,7 @@ class Login extends Component {
         config: {
           name: 'password_input',
           type: 'password',
-          placeHolder: 'Enter your password'
+          placeholder: 'Enter your password'
         },
         validation: {
           requied: true
@@ -52,7 +56,21 @@ class Login extends Component {
     });
   };
 
-  submitForm = () => {};
+  submitForm = event => {
+    event.preventDefault();
+
+    let dataToSubmit = generateData(this.state.formData, 'login');
+
+    let formIsValid = isFormValid(this.state.formData, 'login');
+
+    if (formIsValid) {
+      console.log(dataToSubmit);
+    } else {
+      this.setState({
+        formError: true
+      });
+    }
+  };
 
   render() {
     return (
@@ -68,6 +86,11 @@ class Login extends Component {
             formData={this.state.formData.password}
             change={element => this.updateForm(element)}
           />
+
+          {this.state.formError ? (
+            <div className="error_lable">Please check your data</div>
+          ) : null}
+          <button onClick={event => this.submitForm(event)}>Log in</button>
         </form>
       </div>
     );
