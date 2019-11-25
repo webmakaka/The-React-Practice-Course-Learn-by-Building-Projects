@@ -349,6 +349,10 @@ $ curl \
 
 ![Application](../img/pic-03-p1-33.png?raw=true)
 
+<br/>
+
+### 096 CLIENT Finishing register
+
 ---
 
 **Marley**

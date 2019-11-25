@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Dialog from '@material-ui/core/Dialog';
 import { connect } from 'react-redux';
 import FormField from 'components/utils/forms/formField';
 
@@ -8,12 +9,12 @@ import {
   isFormValid
 } from 'components/utils/forms/formActions';
 
-import { loginUser } from 'actions/userActions';
+import { registerUser } from 'actions/userActions';
 
 class Register extends Component {
   state = {
     formError: false,
-    formSuccess: '',
+    formSuccess: false,
     formData: {
       name: {
         element: 'input',
@@ -30,7 +31,7 @@ class Register extends Component {
         touched: false,
         validationMessage: ''
       },
-      lastName: {
+      lastname: {
         element: 'input',
         value: '',
         config: {
@@ -111,7 +112,28 @@ class Register extends Component {
     let formIsValid = isFormValid(this.state.formData, 'register');
 
     if (formIsValid) {
-      console.log(dataToSubmit);
+      this.props
+        .dispatch(registerUser(dataToSubmit))
+        .then(response => {
+          if (response.payload.success) {
+            this.setState({
+              formError: false,
+              formSuccess: true
+            });
+            setTimeout(() => {
+              this.props.history.push('/register_login');
+            }, 3000);
+          } else {
+            this.setState({
+              formError: true
+            });
+          }
+        })
+        .catch(e => {
+          this.setState({
+            formError: true
+          });
+        });
     } else {
       this.setState({
         formError: true
@@ -137,8 +159,8 @@ class Register extends Component {
                   </div>
                   <div className="block">
                     <FormField
-                      id={'lastName'}
-                      formData={this.state.formData.lastName}
+                      id={'lastname'}
+                      formData={this.state.formData.lastname}
                       change={element => this.updateForm(element)}
                     />
                   </div>
@@ -155,14 +177,14 @@ class Register extends Component {
                 <div className="form_block_two">
                   <div className="block">
                     <FormField
-                      id={'name'}
+                      id={'password'}
                       formData={this.state.formData.password}
                       change={element => this.updateForm(element)}
                     />
                   </div>
                   <div className="block">
                     <FormField
-                      id={'lastName'}
+                      id={'confirmPassword'}
                       formData={this.state.formData.confirmPassword}
                       change={element => this.updateForm(element)}
                     />
@@ -180,6 +202,15 @@ class Register extends Component {
             </div>
           </div>
         </div>
+
+        <Dialog open={this.state.formSuccess}>
+          <div className="dialog_alert">
+            <div>Congratulations !</div>
+            <div>
+              You will be redirected to the LOGIN in a couple seconds...
+            </div>
+          </div>
+        </Dialog>
       </div>
     );
   }
