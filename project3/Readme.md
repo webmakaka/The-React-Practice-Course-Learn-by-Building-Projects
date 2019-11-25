@@ -369,6 +369,14 @@ $ curl \
 
 ### 098 CLIENT Preventing routes
 
+<br/>
+
+### 099 CLIENT Header links
+
+<br/>
+
+![Application](../img/pic-03-p1-35.png?raw=true)
+
 ---
 
 **Marley**
