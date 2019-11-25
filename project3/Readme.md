@@ -393,6 +393,14 @@ $ curl \
 
 ### 102 CLIENT Home cards
 
+<br/>
+
+### 103 CLIENT Home cards 2
+
+<br/>
+
+![Application](../img/pic-03-p2-37.png?raw=true)
+
 ---
 
 **Marley**
