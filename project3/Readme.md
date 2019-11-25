@@ -353,6 +353,14 @@ $ curl \
 
 ### 096 CLIENT Finishing register
 
+<br/>
+
+### 097 CLIENT Creating the dashoard
+
+<br/>
+
+![Application](../img/pic-03-p1-34.png?raw=true)
+
 ---
 
 **Marley**
