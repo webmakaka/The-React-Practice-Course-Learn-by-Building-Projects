@@ -377,6 +377,10 @@ $ curl \
 
 ![Application](../img/pic-03-p1-35.png?raw=true)
 
+<br/>
+
+### 100 CLIENT Finishing Header links
+
 ---
 
 **Marley**
