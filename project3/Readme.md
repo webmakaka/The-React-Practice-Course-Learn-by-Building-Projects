@@ -361,6 +361,14 @@ $ curl \
 
 ![Application](../img/pic-03-p1-34.png?raw=true)
 
+<br/>
+
+## 08 Project Three Waves - part two
+
+<br/>
+
+### 098 CLIENT Preventing routes
+
 ---
 
 **Marley**
