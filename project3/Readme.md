@@ -401,6 +401,14 @@ $ curl \
 
 ![Application](../img/pic-03-p2-37.png?raw=true)
 
+<br/>
+
+### 104 CLIENT Finishing home cards
+
+<br/>
+
+![Application](../img/pic-03-p2-38.png?raw=true)
+
 ---
 
 **Marley**
