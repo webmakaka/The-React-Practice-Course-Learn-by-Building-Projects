@@ -375,11 +375,19 @@ $ curl \
 
 <br/>
 
-![Application](../img/pic-03-p1-35.png?raw=true)
+![Application](../img/pic-03-p2-35.png?raw=true)
 
 <br/>
 
 ### 100 CLIENT Finishing Header links
+
+<br/>
+
+### 101 CLIENT Home slider promotions
+
+<br/>
+
+![Application](../img/pic-03-p2-36.png?raw=true)
 
 ---
 
