@@ -114,7 +114,7 @@ app.post('/api/product/wood', auth, admin, (req, res) => {
 //            BRAND
 //===============================
 
-app.get('/app/product/brands/', (req, res) => {
+app.get('/api/product/brands/', (req, res) => {
   Brand.find({}, (err, brands) => {
     if (err) return res.status(400).send(err);
 

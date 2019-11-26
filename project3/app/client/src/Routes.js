@@ -7,6 +7,8 @@ import AuthenticationCheck from 'hoc/AuthenticationCheck';
 import Home from 'components/home';
 import RegisterLogin from 'components/register_login';
 import Register from 'components/register_login/Register';
+import Shop from 'components/shop';
+
 import UserDashBoard from 'components/user';
 
 const Routes = () => {
@@ -27,6 +29,11 @@ const Routes = () => {
           path="/register_login"
           exact
           component={AuthenticationCheck(RegisterLogin, false)}
+        ></Route>
+        <Route
+          path="/shop"
+          exact
+          component={AuthenticationCheck(Shop, null)}
         ></Route>
         <Route
           path="/"

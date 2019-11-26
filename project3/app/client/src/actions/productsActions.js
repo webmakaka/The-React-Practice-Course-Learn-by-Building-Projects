@@ -1,6 +1,11 @@
 import axios from 'axios';
 
-import { GET_PRODUCTS_BY_SELL, GET_PRODUCTS_BY_ARRIVAL } from 'actions/types';
+import {
+  GET_PRODUCTS_BY_SELL,
+  GET_PRODUCTS_BY_ARRIVAL,
+  GET_BRANDS,
+  GET_WOODS
+} from 'actions/types';
 
 import { PRODUCT_SERVER } from 'components/utils/misc';
 
@@ -22,6 +27,32 @@ export function getProductsByArrival() {
 
   return {
     type: GET_PRODUCTS_BY_ARRIVAL,
+    payload: request
+  };
+}
+
+///////////////////////////////////
+//            CATEGOREIS
+//////////////////////////////////
+
+export function getBrands() {
+  const request = axios
+    .get(`${PRODUCT_SERVER}/brands`)
+    .then(response => response.data.brands);
+
+  return {
+    type: GET_BRANDS,
+    payload: request
+  };
+}
+
+export function getWoods() {
+  const request = axios
+    .get(`${PRODUCT_SERVER}/woods`)
+    .then(response => response.data.woods);
+
+  return {
+    type: GET_WOODS,
     payload: request
   };
 }

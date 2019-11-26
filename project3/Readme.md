@@ -133,7 +133,7 @@ $ curl \
 $ curl \
 -H "Content-Type: application/json" \
 --cookie "w_auth=eyJhbGciOiJIUzI1NiJ9.NWRkNjk2OGEyODcxMTU3N2ViOGNmNDE3.pb7q9l_y6KdmfMDtDZprjeunOOPTWAgN5DqPT6FBovU" \
--X GET localhost:5000/app/product/brands/ \
+-X GET localhost:5000/api/product/brands/ \
 | python -m json.tool
 ```
 
@@ -408,6 +408,10 @@ $ curl \
 <br/>
 
 ![Application](../img/pic-03-p2-38.png?raw=true)
+
+<br/>
+
+### 105 CLIENT Startting the Shop component
 
 ---
 
