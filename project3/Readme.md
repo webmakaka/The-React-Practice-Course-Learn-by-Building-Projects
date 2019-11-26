@@ -413,6 +413,10 @@ $ curl \
 
 ### 105 CLIENT Startting the Shop component
 
+<br/>
+
+### 106 CLIENT Shop checkboxes
+
 ---
 
 **Marley**
