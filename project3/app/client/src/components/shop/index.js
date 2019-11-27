@@ -6,15 +6,37 @@ import { getBrands, getWoods } from 'actions/productsActions';
 
 import CollapseCheckBox from 'components/utils/CollapseCheckBox';
 
+import { frets } from 'components/utils/forms/fixedCategories';
+
 class Shop extends Component {
+  state = {
+    grid: '',
+    limit: 6,
+    skip: 0,
+    filters: {
+      brand: [],
+      frets: [],
+      wood: [],
+      price: []
+    }
+  };
+
   componentDidMount() {
     this.props.dispatch(getBrands());
     this.props.dispatch(getWoods());
   }
 
-  handleFilters = () => {};
+  handleFilters = (filters, category) => {
+    const newFilters = { ...this.state.filters };
+    newFilters[category] = filters;
+    this.setState({
+      filters: newFilters
+    });
+  };
 
   render() {
+    console.log(this.state.filters);
+
     const products = this.props.products;
 
     return (
@@ -25,10 +47,26 @@ class Shop extends Component {
             <div className="left">
               <CollapseCheckBox
                 initState={true}
-                title="brands"
+                title="Brands"
                 list={products.brands}
                 handleFilters={filters => {
                   this.handleFilters(filters, 'brand');
+                }}
+              />
+              <CollapseCheckBox
+                initState={false}
+                title="Frets"
+                list={frets}
+                handleFilters={filters => {
+                  this.handleFilters(filters, 'frets');
+                }}
+              />
+              <CollapseCheckBox
+                initState={true}
+                title="Wood"
+                list={products.woods}
+                handleFilters={filters => {
+                  this.handleFilters(filters, 'wood');
                 }}
               />
             </div>

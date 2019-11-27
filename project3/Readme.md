@@ -417,6 +417,14 @@ $ curl \
 
 ### 106 CLIENT Shop checkboxes
 
+<br/>
+
+### 107 CLIENT Finishing checkboxes
+
+<br/>
+
+![Application](../img/pic-03-p2-39.png?raw=true)
+
 ---
 
 **Marley**
