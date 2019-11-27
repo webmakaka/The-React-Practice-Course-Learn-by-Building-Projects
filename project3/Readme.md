@@ -433,6 +433,14 @@ $ curl \
 
 ![Application](../img/pic-03-p2-40.png?raw=true)
 
+<br/>
+
+### 109 SERVER Crating the shop route
+
+<br/>
+
+### 110 SERVER Finishing the shop route
+
 ---
 
 **Marley**

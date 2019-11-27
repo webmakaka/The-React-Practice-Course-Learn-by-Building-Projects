@@ -8,3 +8,4 @@ export const GET_PRODUCTS_BY_ARRIVAL = 'GET_PRODUCTS_BY_ARRIVAL';
 
 export const GET_BRANDS = 'GET_BRANDS';
 export const GET_WOODS = 'GET_WOODS';
+export const GET_PRODUCTS_TO_SHOP = 'GET_PRODUCTS_TO_SHOPs';
