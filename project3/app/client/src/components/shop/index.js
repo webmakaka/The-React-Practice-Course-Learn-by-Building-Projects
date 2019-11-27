@@ -13,6 +13,8 @@ import CollapseRadio from 'components/utils/CollapseRadio';
 
 import { frets, price } from 'components/utils/forms/fixedCategories';
 
+import LoadMoreCards from 'components/shop/LoadMoreCards';
+
 class Shop extends Component {
   state = {
     grid: '',
@@ -116,7 +118,20 @@ class Shop extends Component {
                 }}
               />
             </div>
-            <div className="right">right</div>
+            <div className="right">
+              <div className="shop_options">
+                <div className="shop_grids clear">grids</div>
+              </div>
+              <div>
+                <LoadMoreCards
+                  grid={this.state.grid}
+                  limit={this.state.limit}
+                  size={products.toShopSize}
+                  products={products.toShop}
+                  loadMore={() => console.log('load more')}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

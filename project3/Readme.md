@@ -441,6 +441,14 @@ $ curl \
 
 ### 110 SERVER Finishing the shop route
 
+<br/>
+
+### 111 CLIENT Showing Shop cards
+
+<br/>
+
+![Application](../img/pic-03-p2-41.png?raw=true)
+
 ---
 
 **Marley**
