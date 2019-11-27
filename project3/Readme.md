@@ -425,6 +425,14 @@ $ curl \
 
 ![Application](../img/pic-03-p2-39.png?raw=true)
 
+<br/>
+
+### 108 CLIENT Adding Radio options
+
+<br/>
+
+![Application](../img/pic-03-p2-40.png?raw=true)
+
 ---
 
 **Marley**

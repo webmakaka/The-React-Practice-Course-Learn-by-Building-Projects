@@ -5,8 +5,9 @@ import { connect } from 'react-redux';
 import { getBrands, getWoods } from 'actions/productsActions';
 
 import CollapseCheckBox from 'components/utils/CollapseCheckBox';
+import CollapseRadio from 'components/utils/CollapseRadio';
 
-import { frets } from 'components/utils/forms/fixedCategories';
+import { frets, price } from 'components/utils/forms/fixedCategories';
 
 class Shop extends Component {
   state = {
@@ -26,9 +27,28 @@ class Shop extends Component {
     this.props.dispatch(getWoods());
   }
 
+  handlePlice = value => {
+    const data = price;
+    let array = [];
+
+    for (let key in data) {
+      if (data[key]._id === parseInt(value, 10)) {
+        array = data[key].array;
+      }
+    }
+
+    return array;
+  };
+
   handleFilters = (filters, category) => {
     const newFilters = { ...this.state.filters };
     newFilters[category] = filters;
+
+    if (category === 'price') {
+      let priceValues = this.handlePlice(filters);
+      newFilters[category] = priceValues;
+    }
+
     this.setState({
       filters: newFilters
     });
@@ -62,11 +82,19 @@ class Shop extends Component {
                 }}
               />
               <CollapseCheckBox
-                initState={true}
+                initState={false}
                 title="Wood"
                 list={products.woods}
                 handleFilters={filters => {
                   this.handleFilters(filters, 'wood');
+                }}
+              />
+              <CollapseRadio
+                initState={true}
+                title="Price"
+                list={price}
+                handleFilters={filters => {
+                  this.handleFilters(filters, 'price');
                 }}
               />
             </div>
