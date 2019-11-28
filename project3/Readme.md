@@ -453,6 +453,14 @@ $ curl \
 
 ### 112 CLIENT Shop loadmore button
 
+<br/>
+
+### 113 CLIENT Shop grids
+
+<br/>
+
+![Application](../img/pic-03-p2-42.png?raw=true)
+
 ---
 
 **Marley**

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import PageTop from 'components/utils/PageTop';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import faBars from '@fortawesome/fontawesome-free-solid/faBars';
+import faTh from '@fortawesome/fontawesome-free-solid/faTh';
 
 import { connect } from 'react-redux';
 import {
@@ -95,6 +98,12 @@ class Shop extends Component {
       });
   };
 
+  handleGrid = () => {
+    this.setState({
+      grid: !this.state.grid ? 'grid_bars' : ''
+    });
+  };
+
   render() {
     const products = this.props.products;
 
@@ -139,7 +148,20 @@ class Shop extends Component {
             </div>
             <div className="right">
               <div className="shop_options">
-                <div className="shop_grids clear">grids</div>
+                <div className="shop_grids clear">
+                  <div
+                    className={`grid_btn ${this.state.grid ? '' : 'active'}`}
+                    onClick={() => this.handleGrid()}
+                  >
+                    <FontAwesomeIcon icon={faTh} />
+                  </div>
+                  <div
+                    className={`grid_btn ${!this.state.grid ? '' : 'active'}`}
+                    onClick={() => this.handleGrid()}
+                  >
+                    <FontAwesomeIcon icon={faBars} />
+                  </div>
+                </div>
               </div>
               <div>
                 <LoadMoreCards
