@@ -479,6 +479,14 @@ mlab --> loggedin user set administator role "role": 1,
 
 ![Application](../img/pic-03-p2-44.png?raw=true)
 
+<br/>
+
+### 116 ADMIN Add products form 3
+
+<br/>
+
+![Application](../img/pic-03-p2-45.png?raw=true)
+
 ---
 
 **Marley**
