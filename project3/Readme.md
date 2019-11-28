@@ -461,6 +461,16 @@ $ curl \
 
 ![Application](../img/pic-03-p2-42.png?raw=true)
 
+<br/>
+
+### 114 ADMIN Add products form
+
+mlab --> loggedin user set administator role "role": 1,
+
+<br/>
+
+![Application](../img/pic-03-p2-43.png?raw=true)
+
 ---
 
 **Marley**
