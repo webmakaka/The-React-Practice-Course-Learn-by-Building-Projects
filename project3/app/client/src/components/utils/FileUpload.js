@@ -36,8 +36,21 @@ class FileUpload extends Component {
       );
     });
   };
+  onRemove = id => {};
 
-  showUploadedImages = () => {};
+  showUploadedImages = () =>
+    this.state.uploadedFiles.map(item => (
+      <div
+        className="dropzone_box"
+        key={item.public_id}
+        onClick={() => this.onRemove(item.public_id)}
+      >
+        <div
+          className="wrap"
+          style={{ background: `url(${item.url}) no-repeat` }}
+        ></div>
+      </div>
+    ));
 
   render() {
     return (

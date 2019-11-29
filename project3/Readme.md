@@ -503,6 +503,14 @@ https://github.com/react-dropzone/react-dropzone
 
 ![Application](../img/pic-03-p2-46.png?raw=true)
 
+<br/>
+
+### 119 ADMIN Adding the File Upload 2
+
+<br/>
+
+![Application](../img/pic-03-p2-47.png?raw=true)
+
 ---
 
 **Marley**

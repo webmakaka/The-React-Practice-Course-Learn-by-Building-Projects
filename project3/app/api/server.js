@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
 
+const formidable = require('express-formidable');
+const cloudinary = require('cloudinary');
+
 // Models
 const { User } = require('./models/User');
 const { Brand } = require('./models/Brand');
@@ -22,6 +25,12 @@ mongoose.connect(process.env.DATABASE);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
+
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.CLOUD_API_KEY,
+  api_secret: process.env.CLOUD_API_SECRET
+});
 
 //===============================
 //            PRODUCTS
@@ -269,6 +278,22 @@ app.post('/api/users/login', (req, res) => {
             });
         });
       });
+    }
+  );
+});
+
+app.post('/api/users/uploadimage', auth, admin, formidable(), (req, res) => {
+  cloudinary.uploader.upload(
+    req.files.file.path,
+    result => {
+      res.status(200).send({
+        public_id: result.public_id,
+        url: result.url
+      });
+    },
+    {
+      public_id: `${Date.now()}`,
+      resource_type: 'auto'
     }
   );
 });
