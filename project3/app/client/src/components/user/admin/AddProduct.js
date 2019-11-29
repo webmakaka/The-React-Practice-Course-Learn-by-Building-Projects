@@ -8,10 +8,16 @@ import {
   update,
   generateData,
   isFormValid,
-  populateOptionFields
+  populateOptionFields,
+  resetFields
 } from 'components/utils/forms/formActions';
 
-import { getBrands, getWoods } from 'actions/productsActions';
+import {
+  getBrands,
+  getWoods,
+  addProduct,
+  clearProduct
+} from 'actions/productsActions';
 
 class AddProduct extends Component {
   state = {
@@ -209,6 +215,58 @@ class AddProduct extends Component {
     this.setState({
       formData: newFormData
     });
+  };
+
+  updateForm = element => {
+    const newFormData = update(element, this.state.formData, 'products');
+    this.setState({
+      formError: false,
+      formData: newFormData
+    });
+  };
+
+  submitForm = event => {
+    event.preventDefault();
+
+    let dataToSubmit = generateData(this.state.formData, 'products');
+
+    let formIsValid = isFormValid(this.state.formData, 'products');
+
+    if (formIsValid) {
+      this.props.dispatch(addProduct(dataToSubmit)).then(() => {
+        if (this.props.products.addProduct.success) {
+          this.resetFieldsHandler();
+        } else {
+          this.setState({
+            formError: true
+          });
+        }
+      });
+    } else {
+      this.setState({
+        formError: true
+      });
+    }
+  };
+
+  resetFieldsHandler = () => {
+    const newFormData = resetFields(this.state.formData, 'products');
+
+    this.setState({
+      formData: newFormData,
+      formSuccess: true
+    });
+
+    setTimeout(() => {
+      this.setState(
+        {
+          formSuccess: false
+        },
+        () => {
+          this.props.dispatch(clearProduct());
+        }
+      );
+    }, 3000);
   };
 
   render() {
