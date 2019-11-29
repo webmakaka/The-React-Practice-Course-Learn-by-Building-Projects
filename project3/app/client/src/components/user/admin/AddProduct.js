@@ -12,6 +12,8 @@ import {
   resetFields
 } from 'components/utils/forms/formActions';
 
+import FileUpload from 'components/utils/FileUpload';
+
 import {
   getBrands,
   getWoods,
@@ -184,6 +186,16 @@ class AddProduct extends Component {
         touched: false,
         validationMessage: '',
         showLabel: true
+      },
+      images: {
+        value: [],
+        validation: {
+          requied: false
+        },
+        valid: true,
+        touched: false,
+        validationMessage: '',
+        showLabel: false
       }
     }
   };
@@ -269,12 +281,19 @@ class AddProduct extends Component {
     }, 3000);
   };
 
+  imagesHandler = () => {};
+
   render() {
     return (
       <UserLayout>
         <div>
           <h1>Add product</h1>
           <form onSubmit={event => this.submitForm(event)}>
+            <FileUpload
+              imagesHandler={images => this.imagesHandler(images)}
+              reset={this.state.formSuccess}
+            />
+
             <FormField
               id={'name'}
               formData={this.state.formData.name}

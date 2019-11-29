@@ -18,5 +18,5 @@
 
 <a href="https://jsdev.org">jsdev.org</a>
 
-Any questions on eng: https://t.me/jsdev_org  
-Любые вопросы на русском: https://t.me/jsdev_ru
+Any questions on eng: <a href="https://jsdev.org/chat/">Telegram or Slack</a>  
+Любые вопросы на русском: <a href="https://jsdev.ru/chat/">Telegram or Slack</a>

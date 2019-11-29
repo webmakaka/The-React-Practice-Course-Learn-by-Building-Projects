@@ -273,7 +273,7 @@ $ curl \
     redux \
     redux-promise \
     redux-thunk \
-    react-dropzone \
+    react-dropzone@4.2.12 \
     react-moment \
     react-paypal-express-checkout
 
@@ -491,11 +491,23 @@ mlab --> loggedin user set administator role "role": 1,
 
 ### 117 ADMIN Finishing the Add products form
 
+<br/>
+
+### 118 ADMIN Adding the File Upload
+
+https://cloudinary.com/
+
+https://github.com/react-dropzone/react-dropzone
+
+<br/>
+
+![Application](../img/pic-03-p2-46.png?raw=true)
+
 ---
 
 **Marley**
 
 <a href="https://jsdev.org">jsdev.org</a>
 
-Any questions on eng: https://t.me/jsdev_org  
-Любые вопросы на русском: https://t.me/jsdev_ru
+Any questions on eng: <a href="https://jsdev.org/chat/">Telegram or Slack</a>  
+Любые вопросы на русском: <a href="https://jsdev.ru/chat/">Telegram or Slack</a>
