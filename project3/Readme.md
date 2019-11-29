@@ -507,9 +507,19 @@ https://github.com/react-dropzone/react-dropzone
 
 ### 119 ADMIN Adding the File Upload 2
 
+Guitars pictures are in "data/guitars" folder
+
 <br/>
 
 ![Application](../img/pic-03-p2-47.png?raw=true)
+
+<br/>
+
+### 120 ADMIN Finishing the File Upload
+
+<br/>
+
+![Application](../img/pic-03-p2-48.png?raw=true)
 
 ---
 
