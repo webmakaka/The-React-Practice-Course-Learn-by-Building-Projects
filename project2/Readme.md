@@ -33,11 +33,18 @@ password123
 <br/>
 
     $ minikube version
-    minikube version: v1.4.0
+    minikube version: v1.5.2
 
 <br/>
 
     $ minikube start
+    $ minikube addons enable ingress
+
+<br/>
+
+    $ kubectl get nodes
+    NAME       STATUS   ROLES    AGE     VERSION
+    minikube   Ready    master   2m26s   v1.16.2
 
 <br/>
 
@@ -48,11 +55,16 @@ password123
 
 <br/>
 
+    $ kubectl create -f ./project2/minikube/project2-namespace.yml
     $ kubectl create -f ./project2/minikube
 
 <br/>
 
     $ minikube ip
+
+<br/>
+
+    $ curl 192.168.99.150 -H 'Host: project2.local'
 
 <br/>
 

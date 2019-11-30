@@ -28,11 +28,18 @@ http://localhost
 <br/>
 
     $ minikube version
-    minikube version: v1.4.0
+    minikube version: v1.5.2
 
 <br/>
 
     $ minikube start
+    $ minikube addons enable ingress
+
+<br/>
+
+    $ kubectl get nodes
+    NAME       STATUS   ROLES    AGE     VERSION
+    minikube   Ready    master   2m26s   v1.16.2
 
 <br/>
 
@@ -43,11 +50,34 @@ http://localhost
 
 <br/>
 
-    $ kubectl create -f ./project1/minikube
+    $ minikube addons enable ingress
+
+<br/>
+
+    $ kubectl create -f ./project1/minikube/project1-namespace.yml
+    $ kubectl create -f ./project1/minikube -n project1
+
+<br/>
+
+    $ kubectl get pods -n project1
+    NAME                                   READY   STATUS    RESTARTS   AGE
+    project1-deployment-7bd69f9c55-c9cxt   1/1     Running   0          49s
+    project1-deployment-7bd69f9c55-fs2tc   1/1     Running   0          49s
+    project1-deployment-7bd69f9c55-tt6gp   1/1     Running   0          49s
+
+<br/>
+
+    $ kubectl get ingress -n project1
+    NAME              HOSTS            ADDRESS   PORTS   AGE
+    ingress-service   project1.local             80      2m47s
 
 <br/>
 
     $ minikube ip
+
+<br/>
+
+    $ curl 192.168.99.150 -H 'Host: project1.local'
 
 <br/>
 
