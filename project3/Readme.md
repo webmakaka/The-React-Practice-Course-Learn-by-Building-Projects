@@ -521,6 +521,14 @@ Guitars pictures are in "data/guitars" folder
 
 ![Application](../img/pic-03-p2-48.png?raw=true)
 
+<br/>
+
+### 121 ADMIN Manage Brands component
+
+<br/>
+
+![Application](../img/pic-03-p2-49.png?raw=true)
+
 ---
 
 **Marley**
