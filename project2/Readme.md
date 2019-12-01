@@ -55,7 +55,11 @@ password123
 
 <br/>
 
-    $ kubectl create -f ./project2/minikube/project2-namespace.yml
+    $ kubectl create namespace project2
+    $ kubectl config set-context $(kubectl config current-context) --namespace=project2
+
+<br/>
+
     $ kubectl create -f ./project2/minikube
 
 <br/>

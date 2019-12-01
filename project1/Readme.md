@@ -50,16 +50,16 @@ http://localhost
 
 <br/>
 
-    $ minikube addons enable ingress
+    $ kubectl create namespace project1
+    $ kubectl config set-context $(kubectl config current-context) --namespace=project1
 
 <br/>
 
-    $ kubectl create -f ./project1/minikube/project1-namespace.yml
-    $ kubectl create -f ./project1/minikube -n project1
+    $ kubectl create -f ./project1/minikube
 
 <br/>
 
-    $ kubectl get pods -n project1
+    $ kubectl get pods
     NAME                                   READY   STATUS    RESTARTS   AGE
     project1-deployment-7bd69f9c55-c9cxt   1/1     Running   0          49s
     project1-deployment-7bd69f9c55-fs2tc   1/1     Running   0          49s
@@ -67,7 +67,7 @@ http://localhost
 
 <br/>
 
-    $ kubectl get ingress -n project1
+    $ kubectl get ingress
     NAME              HOSTS            ADDRESS   PORTS   AGE
     ingress-service   project1.local             80      2m47s
 
