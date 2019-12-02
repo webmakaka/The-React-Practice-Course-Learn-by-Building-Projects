@@ -537,6 +537,18 @@ Guitars pictures are in "data/guitars" folder
 
 ![Application](../img/pic-03-p2-50.png?raw=true)
 
+<br/>
+
+## 09 Project Three Waves - part three
+
+<br/>
+
+### 123 CLIENT Adding the Product Detail component
+
+<br/>
+
+![Application](../img/pic-03-p3-51.png?raw=true)
+
 ---
 
 **Marley**

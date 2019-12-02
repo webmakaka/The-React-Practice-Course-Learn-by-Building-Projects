@@ -1,0 +1,51 @@
+import React, { Component } from 'react';
+
+import { connect } from 'react-redux';
+
+import PageTop from 'components/utils/PageTop';
+
+import { getProductDetail, clearProductDetail } from 'actions/productsActions';
+
+import ProdInfo from 'components/product/ProdInfo';
+
+class ProductPage extends Component {
+  componentDidMount() {
+    const id = this.props.match.params.id;
+    this.props.dispatch(getProductDetail(id));
+  }
+
+  componentWillUnmount() {
+    this.props.dispatch(clearProductDetail());
+  }
+
+  render() {
+    return (
+      <div>
+        <PageTop title="Product detail"></PageTop>
+        <div className="container">
+          {this.props.products.prodDetail ? (
+            <div className="product_detail_wrapper">
+              <div className="left">images</div>
+              <div className="right">
+                <ProdInfo
+                  addToCart={id => this.addToCarthandler(id)}
+                  detail={this.props.products.prodDetail}
+                />
+              </div>
+            </div>
+          ) : (
+            'Loading'
+          )}
+        </div>
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = state => {
+  return {
+    products: state.products
+  };
+};
+
+export default connect(mapStateToProps)(ProductPage);

@@ -13,6 +13,8 @@ import UserDashBoard from 'components/user';
 import AddProduct from 'components/user/admin/AddProduct';
 import ManageCategories from 'components/user/admin/ManageCategories';
 
+import ProductPage from 'components/product';
+
 const Routes = () => {
   return (
     <Layout>
@@ -31,6 +33,11 @@ const Routes = () => {
           path="/admin/manage_categories"
           exact
           component={AuthenticationCheck(ManageCategories, true)}
+        ></Route>
+        <Route
+          path="/product_detail/:id"
+          exact
+          component={AuthenticationCheck(ProductPage, null)}
         ></Route>
         <Route
           path="/register"
