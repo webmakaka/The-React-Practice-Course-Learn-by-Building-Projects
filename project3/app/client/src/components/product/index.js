@@ -7,6 +7,7 @@ import PageTop from 'components/utils/PageTop';
 import { getProductDetail, clearProductDetail } from 'actions/productsActions';
 
 import ProdInfo from 'components/product/ProdInfo';
+import ProdImg from 'components/product/ProdImg';
 
 class ProductPage extends Component {
   componentDidMount() {
@@ -25,7 +26,11 @@ class ProductPage extends Component {
         <div className="container">
           {this.props.products.prodDetail ? (
             <div className="product_detail_wrapper">
-              <div className="left">images</div>
+              <div className="left">
+                <div style={{ width: '500px' }}>
+                  <ProdImg detail={this.props.products.prodDetail} />
+                </div>
+              </div>
               <div className="right">
                 <ProdInfo
                   addToCart={id => this.addToCarthandler(id)}

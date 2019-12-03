@@ -557,6 +557,16 @@ Guitars pictures are in "data/guitars" folder
 
 ![Application](../img/pic-03-p3-52.png?raw=true)
 
+<br/>
+
+### 125 CLIENT Product detail images section
+
+https://github.com/jossmac/react-images
+
+<br/>
+
+![Application](../img/pic-03-p3-53.png?raw=true)
+
 ---
 
 **Marley**
