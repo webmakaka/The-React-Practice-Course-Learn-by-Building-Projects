@@ -591,6 +591,14 @@ https://github.com/jossmac/react-images
 
 ### 129 CLIENT Finish the add to cart
 
+<br/>
+
+### 130 ADMIN Cart component
+
+<br/>
+
+![Application](../img/pic-03-p3-56.png?raw=true)
+
 ---
 
 **Marley**

@@ -7,9 +7,12 @@ import AuthenticationCheck from 'hoc/AuthenticationCheck';
 import Home from 'components/home';
 import RegisterLogin from 'components/register_login';
 import Register from 'components/register_login/Register';
+
 import Shop from 'components/shop';
 
 import UserDashBoard from 'components/user';
+import UserCart from 'components/user/UserCart';
+
 import AddProduct from 'components/user/admin/AddProduct';
 import ManageCategories from 'components/user/admin/ManageCategories';
 
@@ -23,6 +26,11 @@ const Routes = () => {
           path="/user/dashboard"
           exact
           component={AuthenticationCheck(UserDashBoard, true)}
+        ></Route>
+        <Route
+          path="/user/cart"
+          exact
+          component={AuthenticationCheck(UserCart, true)}
         ></Route>
         <Route
           path="/admin/add_product"
