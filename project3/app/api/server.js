@@ -320,6 +320,27 @@ app.post('/api/users/addToCart', auth, (req, res) => {
     });
 
     if (duplicate) {
+      User.findOneAndUpdate(
+        {
+          _id: req.user._id,
+          'cart.id': mongoose.Types.ObjectId(req.query.productId)
+        },
+        { $inc: { 'cart.$.quantiry': 1 } },
+        { new: true },
+        (err, data) => {
+          if (err) {
+            return res.status(400).json({
+              success: false,
+              err
+            });
+          }
+
+          return res.status(200).json({
+            success: true,
+            data: data.cart
+          });
+        }
+      );
     } else {
       User.findOneAndUpdate(
         { _id: req.user._id },

@@ -587,6 +587,10 @@ https://github.com/jossmac/react-images
 
 ![Application](../img/pic-03-p3-55.png?raw=true)
 
+<br/>
+
+### 129 CLIENT Finish the add to cart
+
 ---
 
 **Marley**
