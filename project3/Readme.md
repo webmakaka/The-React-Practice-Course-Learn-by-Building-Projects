@@ -549,6 +549,14 @@ Guitars pictures are in "data/guitars" folder
 
 ![Application](../img/pic-03-p3-51.png?raw=true)
 
+<br/>
+
+### 124 CLIENT Product Info detail
+
+<br/>
+
+![Application](../img/pic-03-p3-52.png?raw=true)
+
 ---
 
 **Marley**
