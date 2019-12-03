@@ -579,6 +579,14 @@ https://github.com/jossmac/react-images
 
 ![Application](../img/pic-03-p3-54.png?raw=true)
 
+<br/>
+
+### 128 CLIENT Adding items to Cart
+
+<br/>
+
+![Application](../img/pic-03-p3-55.png?raw=true)
+
 ---
 
 **Marley**
