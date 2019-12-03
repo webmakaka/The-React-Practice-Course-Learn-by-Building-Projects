@@ -266,7 +266,7 @@ $ curl \
     @fortawesome/fontawesome-svg-core \
     @material-ui/core \
     axios \
-    react-images \
+    react-images@0.5.17 \
     react-redux \
     react-router-dom \
     react-slick \
@@ -566,6 +566,18 @@ https://github.com/jossmac/react-images
 <br/>
 
 ![Application](../img/pic-03-p3-53.png?raw=true)
+
+<br/>
+
+### 126 CLIENT Finishing the detail adding Lightbox
+
+<br/>
+
+### 127 CLIENT Quick fix to Prod detail
+
+<br/>
+
+![Application](../img/pic-03-p3-54.png?raw=true)
 
 ---
 
