@@ -71,11 +71,20 @@ class UserCart extends Component {
     </div>
   );
 
-  transactionError = () => {};
+  transactionError = data => {
+    console.log('Paypal error');
+  };
 
-  transactionCanceled = () => {};
+  transactionCanceled = () => {
+    console.log('Transaction cancelled');
+  };
 
-  transactionSuccess = () => {};
+  transactionSuccess = data => {
+    this.setState({
+      showTotal: false,
+      showSuccess: true
+    });
+  };
 
   render() {
     return (
@@ -95,7 +104,7 @@ class UserCart extends Component {
                 </div>
               </div>
             ) : this.state.showSuccess ? (
-              <div className="cart_no_items">
+              <div className="cart_success">
                 <FontAwesomeIcon icon={faSmile} />
                 <div>Thank You</div>
                 <div>Your order is now complete</div>

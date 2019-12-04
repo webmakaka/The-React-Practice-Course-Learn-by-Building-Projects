@@ -637,7 +637,15 @@ My Apps & Credentials --> REST API apps --> Create App
 
 <br/>
 
+[check] Connect with PayPal (formerly Log In with PayPal)Identity service that enables your customers to connect with their PayPal login.Advanced options
+
+<br/>
+
 ![Application](../img/pic-03-p3-61.png?raw=true)
+
+<br/>
+
+### 135 ADMIN Finishing Paypal
 
 ---
 
