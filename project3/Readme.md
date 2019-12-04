@@ -275,7 +275,7 @@ $ curl \
     redux-thunk \
     react-dropzone@4.2.12 \
     react-moment \
-    react-paypal-express-checkout
+    react-paypal-button-v2
 
 <!--
     $ npm install --save \
@@ -646,6 +646,22 @@ My Apps & Credentials --> REST API apps --> Create App
 <br/>
 
 ### 135 ADMIN Finishing Paypal
+
+<br/>
+
+![Application](../img/pic-03-p3-62.png?raw=true)
+
+<br/>
+
+![Application](../img/pic-03-p3-63.png?raw=true)
+
+<br/>
+
+![Application](../img/pic-03-p3-64.png?raw=true)
+
+<br/>
+
+![Application](../img/pic-03-p3-65.png?raw=true)
 
 ---
 

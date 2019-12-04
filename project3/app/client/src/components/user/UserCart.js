@@ -80,6 +80,9 @@ class UserCart extends Component {
   };
 
   transactionSuccess = data => {
+    console.log('Success');
+    console.log(data);
+
     this.setState({
       showTotal: false,
       showSuccess: true
@@ -115,12 +118,14 @@ class UserCart extends Component {
           </div>
           {this.state.showTotal ? (
             <div className="paypal_button_container">
-              <PayPal
-                toPay={this.state.total}
-                transactionError={data => this.transactionError(data)}
-                transactionCanceled={data => this.transactionCanceled(data)}
-                onSuccess={data => this.transactionSuccess(data)}
-              />
+              {
+                <PayPal
+                  toPay={this.state.total}
+                  transactionError={data => this.transactionError(data)}
+                  transactionCanceled={data => this.transactionCanceled(data)}
+                  onSuccess={data => this.transactionSuccess(data)}
+                />
+              }
             </div>
           ) : null}
         </div>
