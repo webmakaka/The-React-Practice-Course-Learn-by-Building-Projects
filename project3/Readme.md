@@ -623,6 +623,22 @@ https://github.com/jossmac/react-images
 
 ![Application](../img/pic-03-p3-59.png?raw=true)
 
+<br/>
+
+### 134 ADMIN Adding the Paypal btn
+
+https://developer.paypal.com/
+
+My Apps & Credentials --> REST API apps --> Create App
+
+<br/>
+
+![Application](../img/pic-03-p3-60.png?raw=true)
+
+<br/>
+
+![Application](../img/pic-03-p3-61.png?raw=true)
+
 ---
 
 **Marley**

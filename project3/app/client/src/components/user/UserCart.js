@@ -9,6 +9,7 @@ import { getCartItems, removeCartItem } from 'actions/userActions';
 
 import UserLayout from 'hoc/UserLayout';
 import UserProductBlock from 'components/utils/user/UserProductBlock';
+import PayPal from 'components/utils/PayPal';
 
 class UserCart extends Component {
   state = {
@@ -70,6 +71,12 @@ class UserCart extends Component {
     </div>
   );
 
+  transactionError = () => {};
+
+  transactionCanceled = () => {};
+
+  transactionSuccess = () => {};
+
   render() {
     return (
       <UserLayout>
@@ -98,7 +105,14 @@ class UserCart extends Component {
             )}
           </div>
           {this.state.showTotal ? (
-            <div className="paypal_button_container">PayPal</div>
+            <div className="paypal_button_container">
+              <PayPal
+                toPay={this.state.total}
+                transactionError={data => this.transactionError(data)}
+                transactionCanceled={data => this.transactionCanceled(data)}
+                onSuccess={data => this.transactionSuccess(data)}
+              />
+            </div>
           ) : null}
         </div>
       </UserLayout>
