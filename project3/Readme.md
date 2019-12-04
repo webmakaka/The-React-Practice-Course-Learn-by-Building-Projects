@@ -599,6 +599,14 @@ https://github.com/jossmac/react-images
 
 ![Application](../img/pic-03-p3-56.png?raw=true)
 
+<br/>
+
+### 131 ADMIN Creating the cart blocks
+
+<br/>
+
+![Application](../img/pic-03-p3-57.png?raw=true)
+
 ---
 
 **Marley**

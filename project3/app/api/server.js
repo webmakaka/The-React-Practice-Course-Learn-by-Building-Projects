@@ -314,8 +314,9 @@ app.post('/api/users/addToCart', auth, (req, res) => {
     let duplicate = false;
 
     data.cart.forEach(item => {
-      if (item.id === req.query.productId) {
+      if (item.id == req.query.productId) {
         duplicate = true;
+      } else {
       }
     });
 
@@ -325,7 +326,7 @@ app.post('/api/users/addToCart', auth, (req, res) => {
           _id: req.user._id,
           'cart.id': mongoose.Types.ObjectId(req.query.productId)
         },
-        { $inc: { 'cart.$.quantiry': 1 } },
+        { $inc: { 'cart.$.quantity': 1 } },
         { new: true },
         (err, data) => {
           if (err) {
