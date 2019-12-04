@@ -607,6 +607,14 @@ https://github.com/jossmac/react-images
 
 ![Application](../img/pic-03-p3-57.png?raw=true)
 
+<br/>
+
+### 132 ADMIN Calculating the total.
+
+<br/>
+
+![Application](../img/pic-03-p3-58.png?raw=true)
+
 ---
 
 **Marley**
