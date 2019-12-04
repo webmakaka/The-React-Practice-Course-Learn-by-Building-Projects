@@ -609,11 +609,19 @@ https://github.com/jossmac/react-images
 
 <br/>
 
-### 132 ADMIN Calculating the total.
+### 132 ADMIN Calculating the total
 
 <br/>
 
 ![Application](../img/pic-03-p3-58.png?raw=true)
+
+<br/>
+
+### 133 ADMIN Removing cart items
+
+<br/>
+
+![Application](../img/pic-03-p3-59.png?raw=true)
 
 ---
 
