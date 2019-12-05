@@ -7,6 +7,8 @@ require('dotenv').config();
 const formidable = require('express-formidable');
 const cloudinary = require('cloudinary');
 
+const mailer = require('nodemailer');
+
 // Models
 const { User } = require('./models/User');
 const { Brand } = require('./models/Brand');
@@ -33,6 +35,35 @@ cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.CLOUD_API_KEY,
   api_secret: process.env.CLOUD_API_SECRET
+});
+
+const smtpTransport = mailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 587,
+  secure: false,
+  requireTLS: true,
+  auth: {
+    user: 'your.gmail.account@gmail.com',
+    pass: 'your.password'
+  }
+});
+
+let mail = {
+  from: 'Waves <your.gmail.account@gmail.com>',
+  to: 'receiver@gmail.com',
+  subject: 'Send test email',
+  text: 'Testing our waves emails',
+  html: '<b>Hellow guys this works!</b>'
+};
+
+smtpTransport.sendMail(mail, function(err, response) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('email sent');
+  }
+
+  smtpTransport.close();
 });
 
 //===============================

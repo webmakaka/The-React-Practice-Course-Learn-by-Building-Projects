@@ -732,6 +732,22 @@ http://localhost:5000/api/site/site_data
 
 ### 144 ADMIN Finishing Site info
 
+<br/>
+
+## 11 Project Three BONUS sections
+
+<br/>
+
+### 152 EMAILS Using Nodemailer
+
+    $ cd api
+    $ npm install --save nodemailer
+
+**Allow less secure apps to access account:**
+https://myaccount.google.com/lesssecureapps
+
+
+
 ---
 
 **Marley**
