@@ -21,6 +21,8 @@ import ManageCategories from 'components/user/admin/ManageCategories';
 
 import ProductPage from 'components/product';
 
+import PageNotFound from 'components/utils/PageNotFound';
+
 const Routes = () => {
   return (
     <Layout>
@@ -80,6 +82,7 @@ const Routes = () => {
           exact
           component={AuthenticationCheck(Home, null)}
         ></Route>
+        <Route component={AuthenticationCheck(PageNotFound)}></Route>
       </Switch>
     </Layout>
   );

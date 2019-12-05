@@ -759,6 +759,14 @@ EMAIL_PASS=your_gmail_account_password
 
 ![Application](../img/pic-03-p4-bonus-71.png?raw=true)
 
+<br/>
+
+### 154 NOT FOUND Adding not found route
+
+<br/>
+
+![Application](../img/pic-03-p4-bonus-72.png?raw=true)
+
 ---
 
 **Marley**
