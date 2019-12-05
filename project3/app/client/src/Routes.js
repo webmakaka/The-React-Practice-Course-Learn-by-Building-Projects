@@ -4,6 +4,8 @@ import { Switch, Route } from 'react-router-dom';
 import Layout from 'hoc/Layout';
 import AuthenticationCheck from 'hoc/AuthenticationCheck';
 
+import ManageSite from 'components/user/admin/ManageSite';
+
 import Home from 'components/home';
 import RegisterLogin from 'components/register_login';
 import Register from 'components/register_login/Register';
@@ -48,7 +50,11 @@ const Routes = () => {
           exact
           component={AuthenticationCheck(ManageCategories, true)}
         ></Route>
-
+        <Route
+          path="/admin/site_info"
+          exact
+          component={AuthenticationCheck(ManageSite, true)}
+        ></Route>
         <Route
           path="/product_detail/:id"
           exact

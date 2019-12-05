@@ -703,6 +703,14 @@ My Apps & Credentials --> REST API apps --> Create App
 
 ### 141 ADMIN Finishing Update personal info
 
+<br/>
+
+### 142 ADMIN Creating the Site Info
+
+<br/>
+
+![Application](../img/pic-03-p3-69.png?raw=true)
+
 ---
 
 **Marley**
