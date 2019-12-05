@@ -746,7 +746,18 @@ http://localhost:5000/api/site/site_data
 **Allow less secure apps to access account:**
 https://myaccount.google.com/lesssecureapps
 
+<br/>
 
+### 153 EMAILS Sending a welcome Email
+
+Update .env set
+
+EMAIL_LOGIN=your_gmail_account
+EMAIL_PASS=your_gmail_account_password
+
+<br/>
+
+![Application](../img/pic-03-p4-bonus-71.png?raw=true)
 
 ---
 
