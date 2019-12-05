@@ -274,6 +274,7 @@ $ curl \
     redux-promise \
     redux-thunk \
     react-dropzone@4.2.12 \
+    moment \
     react-moment \
     react-paypal-button-v2
 
@@ -678,6 +679,14 @@ My Apps & Credentials --> REST API apps --> Create App
 <br/>
 
 ![Application](../img/pic-03-p3-66.png?raw=true)
+
+<br/>
+
+### 139 ADMIN User History
+
+<br/>
+
+![Application](../img/pic-03-p3-67.png?raw=true)
 
 ---
 
