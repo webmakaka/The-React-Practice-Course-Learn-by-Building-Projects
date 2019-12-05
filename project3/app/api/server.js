@@ -486,6 +486,27 @@ app.post('/api/users/successbuy', auth, (req, res) => {
   );
 });
 
+app.post('/api/users/update_profile', auth, (req, res) => {
+  User.findOneAndUpdate(
+    { _id: req.user._id },
+    { $set: req.body },
+    { new: true },
+    (err, data) => {
+      if (err) {
+        console.log(err);
+        return res.status(400).json({
+          success: false,
+          err
+        });
+      }
+
+      return res.status(200).json({
+        success: true
+      });
+    }
+  );
+});
+
 const port = process.env.PORT;
 
 app.listen(port, () => {

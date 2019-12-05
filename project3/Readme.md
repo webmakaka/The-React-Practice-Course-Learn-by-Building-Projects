@@ -4,6 +4,9 @@
 
 ## [Project 3]: Waves
 
+**Original src:**  
+https://github.com/ferlobo1985/waves
+
 <br/>
 
 ## Development
@@ -695,6 +698,10 @@ My Apps & Credentials --> REST API apps --> Create App
 <br/>
 
 ![Application](../img/pic-03-p3-68.png?raw=true)
+
+<br/>
+
+### 141 ADMIN Finishing Update personal info
 
 ---
 
