@@ -1,4 +1,5 @@
 {
+  "name": 'Site',
   "featured": [],
   "siteInfo": [
     {

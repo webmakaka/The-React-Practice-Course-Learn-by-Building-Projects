@@ -10,7 +10,7 @@ import {
   populateFields
 } from 'components/utils/forms/formActions';
 
-import { getSiteData } from 'actions/siteActions';
+import { getSiteData, updateSiteData } from 'actions/siteActions';
 
 class UpdateSiteInfo extends Component {
   state = {
@@ -91,12 +91,9 @@ class UpdateSiteInfo extends Component {
 
   componentDidMount() {
     this.props.dispatch(getSiteData()).then(() => {
-      console.log(this.props.prop.siteData[0]);
-      //      console.log(this.props.site.siteData[0]);
-
       const newFormData = populateFields(
         this.state.formData,
-        this.props.prop.siteData[0]
+        this.props.site.siteData[0]
       );
       this.setState({
         formData: newFormData
@@ -120,7 +117,20 @@ class UpdateSiteInfo extends Component {
     let formIsValid = isFormValid(this.state.formData, 'site_info');
 
     if (formIsValid) {
-      console.log(dataToSubmit);
+      this.props.dispatch(updateSiteData(dataToSubmit)).then(() => {
+        this.setState(
+          {
+            formSuccess: true
+          },
+          () => {
+            setTimeout(() => {
+              this.setState({
+                formSuccess: false
+              });
+            }, 2000);
+          }
+        );
+      });
     } else {
       this.setState({
         formError: true
@@ -175,7 +185,7 @@ class UpdateSiteInfo extends Component {
 
 const mapStateToProps = state => {
   return {
-    prop: state.site
+    site: state.site
   };
 };
 

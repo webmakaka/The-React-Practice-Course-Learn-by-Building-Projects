@@ -522,9 +522,30 @@ app.get('/api/site/site_data', (req, res) => {
 
     return res.status(200).json({
       success: true,
-      site: site[0].siteInfo
+      siteInfo: site[0].siteInfo
     });
   });
+});
+
+app.post('/api/site/site_data', (req, res) => {
+  Site.findOneAndUpdate(
+    { name: 'Site' },
+    { $set: { siteInfo: req.body } },
+    { new: true },
+    (err, data) => {
+      if (err) {
+        return res.status(400).json({
+          success: false,
+          err
+        });
+      }
+
+      return res.status(200).json({
+        success: true,
+        siteInfo: data.siteInfo
+      });
+    }
+  );
 });
 
 //===============================

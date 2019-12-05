@@ -728,6 +728,10 @@ http://localhost:5000/api/site/site_data
 
 ![Application](../img/pic-03-p3-70.png?raw=true)
 
+<br/>
+
+### 144 ADMIN Finishing Site info
+
 ---
 
 **Marley**
