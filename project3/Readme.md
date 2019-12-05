@@ -711,6 +711,23 @@ My Apps & Credentials --> REST API apps --> Create App
 
 ![Application](../img/pic-03-p3-69.png?raw=true)
 
+<br/>
+
+### 143 ADMIN Getting the Site Info
+
+<br/>
+
+Robo 3T -->
+
+- New collection --> sites
+- Import SiteInfo from data/sites.txt
+
+http://localhost:5000/api/site/site_data
+
+<br/>
+
+![Application](../img/pic-03-p3-70.png?raw=true)
+
 ---
 
 **Marley**

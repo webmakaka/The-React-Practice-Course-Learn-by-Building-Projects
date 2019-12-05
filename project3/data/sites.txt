@@ -1,0 +1,11 @@
+{
+  "featured": [],
+  "siteInfo": [
+    {
+      "address": "Kramer 4567",
+      "hours": "Mon-Sun / 9am-8pm",
+      "phone": "555-55-55",
+      "email": "info@waves.com"
+    }
+  ]
+}

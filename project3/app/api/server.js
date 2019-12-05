@@ -13,6 +13,7 @@ const { Brand } = require('./models/Brand');
 const { Wood } = require('./models/Wood');
 const { Product } = require('./models/Product');
 const { Payment } = require('./models/Payment');
+const { Site } = require('./models/Site');
 
 // Middlewares
 const { auth } = require('./middleware/auth');
@@ -493,7 +494,6 @@ app.post('/api/users/update_profile', auth, (req, res) => {
     { new: true },
     (err, data) => {
       if (err) {
-        console.log(err);
         return res.status(400).json({
           success: false,
           err
@@ -506,6 +506,28 @@ app.post('/api/users/update_profile', auth, (req, res) => {
     }
   );
 });
+
+//===============================
+//            SITE
+//===============================
+
+app.get('/api/site/site_data', (req, res) => {
+  Site.find({}, (err, site) => {
+    if (err) {
+      return res.status(400).json({
+        success: false,
+        err
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      site: site[0].siteInfo
+    });
+  });
+});
+
+//===============================
 
 const port = process.env.PORT;
 

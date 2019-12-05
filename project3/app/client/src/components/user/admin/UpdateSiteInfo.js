@@ -10,7 +10,7 @@ import {
   populateFields
 } from 'components/utils/forms/formActions';
 
-import { updateUserData, clearUpdateUser } from 'actions/siteActions';
+import { getSiteData } from 'actions/siteActions';
 
 class UpdateSiteInfo extends Component {
   state = {
@@ -83,10 +83,26 @@ class UpdateSiteInfo extends Component {
         },
         valid: false,
         touched: false,
-        validationMessage: ''
+        validationMessage: '',
+        showLabel: true
       }
     }
   };
+
+  componentDidMount() {
+    this.props.dispatch(getSiteData()).then(() => {
+      console.log(this.props.prop.siteData[0]);
+      //      console.log(this.props.site.siteData[0]);
+
+      const newFormData = populateFields(
+        this.state.formData,
+        this.props.prop.siteData[0]
+      );
+      this.setState({
+        formData: newFormData
+      });
+    });
+  }
 
   updateForm = element => {
     const newFormData = update(element, this.state.formData, 'site_info');
