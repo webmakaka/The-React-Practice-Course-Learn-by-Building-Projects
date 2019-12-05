@@ -47,7 +47,7 @@ const AdminNav = () => {
           console.log('Log out successful');
         },
         error => {
-          console.log('Error logginп out');
+          console.log('Error loggin out');
         }
       );
   };

@@ -18,42 +18,11 @@ class PayPal extends Component {
       console.log(JSON.stringify(err));
     };
 
-    let env = 'sandbox';
-    let currency = 'USD';
-    let total = this.props.toPay;
-
-    // const client = {
-    //   sandbox:
-    //     'AaGVlvPoCROqGH4hiNMO_JIGC6sqq6fGoNo94CqWXAK5tBFPIUV41IrguS7QfHpVdn9b_LrOaF13UtHA',
-    //   production: ''
-    // };
-
     return (
       <div>
-        {/* <PaypalExpressBtn
-          env={env}
-          client={client}
-          currency={currency}
-          total={total}
-          onError={onError}
-          onSuccess={onSuccess}
-          onCancel={onCancel}
-          style={{
-            size: 'large',
-            color: 'blue',
-            shape: 'rect',
-            label: 'checkout'
-          }}
-        /> */}
-
         <PayPalButton
-          amount={total}
+          amount={this.props.toPay}
           options={{ clientId: 'sb', currency: 'USD' }}
-          // shippingPreference="NO_SHIPPING" // default is "GET_FROM_FILE"
-          // onSuccess={(details, data) => {
-          //   alert('Transaction completed by ' + details.payer.name.given_name);
-          // }}
-
           onError={onError}
           onSuccess={onSuccess}
           onCancel={onCancel}

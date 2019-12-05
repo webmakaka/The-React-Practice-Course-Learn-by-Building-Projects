@@ -663,6 +663,22 @@ My Apps & Credentials --> REST API apps --> Create App
 
 ![Application](../img/pic-03-p3-65.png?raw=true)
 
+<br/>
+
+### 136 ADMIN Creating the SUCCESS BUY route
+
+<br/>
+
+### 137 ADMIN Finishing the SUCCESS BUY route
+
+<br/>
+
+### 138 ADMIN Creating the Action and dispatching
+
+<br/>
+
+![Application](../img/pic-03-p3-66.png?raw=true)
+
 ---
 
 **Marley**
