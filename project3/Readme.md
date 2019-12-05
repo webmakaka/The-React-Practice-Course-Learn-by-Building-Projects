@@ -688,6 +688,14 @@ My Apps & Credentials --> REST API apps --> Create App
 
 ![Application](../img/pic-03-p3-67.png?raw=true)
 
+<br/>
+
+### 140 ADMIN Updating personal info
+
+<br/>
+
+![Application](../img/pic-03-p3-68.png?raw=true)
+
 ---
 
 **Marley**

@@ -12,6 +12,7 @@ import Shop from 'components/shop';
 
 import UserDashBoard from 'components/user';
 import UserCart from 'components/user/UserCart';
+import UpdateProfile from 'components/user/UpdateProfile';
 
 import AddProduct from 'components/user/admin/AddProduct';
 import ManageCategories from 'components/user/admin/ManageCategories';
@@ -33,6 +34,11 @@ const Routes = () => {
           component={AuthenticationCheck(UserCart, true)}
         ></Route>
         <Route
+          path="/user/user_profile"
+          exact
+          component={AuthenticationCheck(UpdateProfile, true)}
+        ></Route>
+        <Route
           path="/admin/add_product"
           exact
           component={AuthenticationCheck(AddProduct, true)}
@@ -42,6 +48,7 @@ const Routes = () => {
           exact
           component={AuthenticationCheck(ManageCategories, true)}
         ></Route>
+
         <Route
           path="/product_detail/:id"
           exact
