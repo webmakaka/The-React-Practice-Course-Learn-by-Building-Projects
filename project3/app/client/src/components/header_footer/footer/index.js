@@ -18,6 +18,7 @@ const Footer = ({ data }) => {
                 <FontAwesomeIcon icon={faCompass} className="icon" />
                 <div className="nfo">
                   <div>Address</div>
+
                   <div>{data.siteData[0].address}</div>
                 </div>
               </div>

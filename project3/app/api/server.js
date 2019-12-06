@@ -495,6 +495,8 @@ app.post('/api/users/successbuy', auth, (req, res) => {
               });
             }
 
+            sendEmail(user.email, user.name, null, 'purchase', transactionData);
+
             return res.status(200).json({
               success: true,
               cart: user.cart,
