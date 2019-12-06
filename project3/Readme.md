@@ -780,6 +780,27 @@ https://github.com/brix/crypto-js
 
 ### 156 ORDER ID Sending email with PO (Purchase Order)
 
+<br/>
+
+![Application](../img/pic-03-p4-bonus-73.png?raw=true)
+
+<br/>
+
+### 157 FILE UPLOAD Uploading files
+
+https://github.com/expressjs/multer
+
+    $ cd api
+    $ npm install --save multer
+
+<br/>
+
+### 158 FILE UPLOAD Uploading files 2
+
+<br/>
+
+![Application](../img/pic-03-p4-bonus-74.png?raw=true)
+
 ---
 
 **Marley**

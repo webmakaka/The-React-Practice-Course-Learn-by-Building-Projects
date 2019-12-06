@@ -1,7 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const multer = require('multer');
 const async = require('async');
+const fs = require('fs');
+const path = require('path');
 require('dotenv').config();
 
 const formidable = require('express-formidable');
@@ -39,6 +42,40 @@ cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.CLOUD_API_KEY,
   api_secret: process.env.CLOUD_API_SECRET
+});
+
+//===============================
+//            ADMIN UPLOADS
+//===============================
+
+let storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'uploads/');
+  },
+  filename: (req, file, cb) => {
+    cb(null, `${Date.now()}_${file.originalname}`);
+  }
+});
+
+const upload = multer({ storage: storage }).single('file');
+
+app.post('/api/users/uploadfile', auth, admin, (req, res) => {
+  upload(req, res, err => {
+    if (err) {
+      return res.status(400).json({ success: false, err });
+    }
+
+    return res.status(200).json({
+      success: true
+    });
+  });
+});
+
+app.get('/api/users/admin_files', auth, admin, (req, res) => {
+  const dir = path.resolve('.') + '/uploads/';
+  fs.readdir(dir, (err, items) => {
+    return res.status(200).send(items);
+  });
 });
 
 //===============================

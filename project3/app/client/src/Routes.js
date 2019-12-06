@@ -17,6 +17,7 @@ import UserCart from 'components/user/UserCart';
 import UpdateProfile from 'components/user/UpdateProfile';
 
 import AddProduct from 'components/user/admin/AddProduct';
+import AddFile from 'components/user/admin/AddFile';
 import ManageCategories from 'components/user/admin/ManageCategories';
 
 import ProductPage from 'components/product';
@@ -56,6 +57,11 @@ const Routes = () => {
           path="/admin/site_info"
           exact
           component={AuthenticationCheck(ManageSite, true)}
+        ></Route>
+        <Route
+          path="/admin/add_file"
+          exact
+          component={AuthenticationCheck(AddFile, true)}
         ></Route>
         <Route
           path="/product_detail/:id"
