@@ -301,6 +301,18 @@ app.post('/api/users/register', (req, res) => {
   });
 });
 
+app.post('/api/users/reset_user', (req, res) => {
+  User.findOne({ email: req.body.email }, (err, user) => {
+    user.generateResetToken((err, user) => {
+      if (err) return res.json({ success: false, err });
+
+      sendEmail(user.email, user.name, null, 'reset_password', user);
+
+      return res.status(200).json({ success: true });
+    });
+  });
+});
+
 app.post('/api/users/login', (req, res) => {
   User.findOne(
     {
@@ -308,7 +320,7 @@ app.post('/api/users/login', (req, res) => {
     },
     (err, user) => {
       if (!user) {
-        return res.json({
+        return res.status(400).json({
           loginSuccess: false,
           message: 'Auth failed, email not found'
         });
@@ -357,7 +369,7 @@ app.get('/api/users/removeimage', auth, admin, (req, res) => {
 
   cloudinary.uploader.destroy(image_id, (error, result) => {
     if (error) {
-      return res.json({ success: false, error });
+      return res.status(400).json({ success: false, error });
     }
     res.status(200).res.json({ success: true });
   });

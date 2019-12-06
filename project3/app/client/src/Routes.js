@@ -21,6 +21,7 @@ import AddFile from 'components/user/admin/AddFile';
 import ManageCategories from 'components/user/admin/ManageCategories';
 
 import ProductPage from 'components/product';
+import ResetUser from 'components/reset_user';
 
 import PageNotFound from 'components/utils/PageNotFound';
 
@@ -72,6 +73,11 @@ const Routes = () => {
           path="/register"
           exact
           component={AuthenticationCheck(Register, false)}
+        ></Route>
+        <Route
+          path="/reset_user"
+          exact
+          component={AuthenticationCheck(ResetUser, false)}
         ></Route>
         <Route
           path="/register_login"

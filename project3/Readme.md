@@ -805,6 +805,22 @@ https://github.com/expressjs/multer
 
 ### 159 FILE DOWNLOAD Downloading files
 
+<br/>
+
+### 160 PASSWORD Adding forgot password
+
+<br/>
+
+### 161 PASSWORD Adding forgot password 2
+
+<br/>
+
+![Application](../img/pic-03-p4-bonus-75.png?raw=true)
+
+<br/>
+
+![Application](../img/pic-03-p4-bonus-76.png?raw=true)
+
 ---
 
 **Marley**
