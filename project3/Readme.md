@@ -767,6 +767,15 @@ EMAIL_PASS=your_gmail_account_password
 
 ![Application](../img/pic-03-p4-bonus-72.png?raw=true)
 
+<br/>
+
+### 155 ORDER ID Adding custom PO (Purchase Order)
+
+https://github.com/brix/crypto-js
+
+    $ cd api
+    $ npm install --save crypto-js
+
 ---
 
 **Marley**
