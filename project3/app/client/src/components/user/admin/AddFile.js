@@ -61,9 +61,13 @@ class AddFile extends Component {
     this.state.files
       ? this.state.files.map((item, i) => (
           <li key={i}>
-            <Link to={`/api/users/download/${item}`} target="_blank">
+            {/* <Link to={`/api/users/download/${item}`} target="_blank">
               {item}
-            </Link>
+            </Link> */}
+
+            <a href={`http://localhost:5000/api/users/download/${item}`}>
+              {item}
+            </a>
           </li>
         ))
       : null;
