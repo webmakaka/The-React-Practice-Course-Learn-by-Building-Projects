@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const moment = require('moment');
 const multer = require('multer');
 const async = require('async');
 const fs = require('fs');
@@ -304,13 +305,48 @@ app.post('/api/users/register', (req, res) => {
 app.post('/api/users/reset_user', (req, res) => {
   User.findOne({ email: req.body.email }, (err, user) => {
     user.generateResetToken((err, user) => {
-      if (err) return res.json({ success: false, err });
+      if (err) return res.status(400).json({ success: false, err });
 
       sendEmail(user.email, user.name, null, 'reset_password', user);
 
       return res.status(200).json({ success: true });
     });
   });
+});
+
+app.post('/api/users/reset_password', (req, res) => {
+  const today = moment()
+    .startOf('day')
+    .valueOf();
+
+  User.findOne(
+    {
+      resetToken: req.body.resetToken,
+      resetTokenExp: {
+        $gte: today
+      }
+    },
+    (err, user) => {
+      if (!user) {
+        return res.status(400).json({
+          success: false,
+          message: 'Sorry, token bad, generate an ew one!'
+        });
+      }
+
+      user.password = req.body.password;
+      user.resetToken = '';
+      user.resetTokenExp = '';
+
+      user.save((err, data) => {
+        if (err) return res.status(400).json({ success: false, err });
+
+        return res.status(200).json({
+          success: true
+        });
+      });
+    }
+  );
 });
 
 app.post('/api/users/login', (req, res) => {

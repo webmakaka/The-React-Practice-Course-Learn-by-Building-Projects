@@ -22,6 +22,7 @@ import ManageCategories from 'components/user/admin/ManageCategories';
 
 import ProductPage from 'components/product';
 import ResetUser from 'components/reset_user';
+import ResetPass from 'components/reset_user/ResetPass';
 
 import PageNotFound from 'components/utils/PageNotFound';
 
@@ -73,6 +74,12 @@ const Routes = () => {
           path="/register"
           exact
           component={AuthenticationCheck(Register, false)}
+        ></Route>
+
+        <Route
+          path="/reset_password/:token"
+          exact
+          component={AuthenticationCheck(ResetPass, false)}
         ></Route>
         <Route
           path="/reset_user"

@@ -821,6 +821,14 @@ https://github.com/expressjs/multer
 
 ![Application](../img/pic-03-p4-bonus-76.png?raw=true)
 
+<br/>
+
+### 162 PASSWORD Adding forgot password 3
+
+<br/>
+
+### 163 PASSWORD Finishing forgot password
+
 ---
 
 **Marley**
