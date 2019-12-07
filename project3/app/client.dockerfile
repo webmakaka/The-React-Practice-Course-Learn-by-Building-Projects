@@ -1,4 +1,5 @@
-FROM node:lts-alpine as builder
+#FROM node:alpine as builder
+FROM node:12.13.1-alpine3.10 as builder
 
 RUN mkdir -p /project
 WORKDIR '/project'
