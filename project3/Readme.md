@@ -9,6 +9,72 @@ https://github.com/ferlobo1985/waves
 
 <br/>
 
+**Run App on Minikube**
+
+<br/>
+
+    $ minikube version
+    minikube version: v1.5.2
+
+<br/>
+
+    $ minikube start
+    $ minikube addons enable ingress
+
+<br/>
+
+    $ kubectl get nodes
+    NAME       STATUS   ROLES    AGE     VERSION
+    minikube   Ready    master   2m26s   v1.16.2
+
+<br/>
+
+    $ mkdir -p ~/projects/dev/js/react/
+    $ cd ~/projects/dev/js/react/
+    $ git clone https://github.com/marley-nodejs/The-React-Practice-Course-Learn-by-Building-Projects
+    $ cd ~/projects/dev/js/react/The-React-Practice-Course-Learn-by-Building-Projects
+
+<br/>
+
+    $ kubectl create namespace project3
+    $ kubectl config set-context $(kubectl config current-context) --namespace=project3
+
+<br/>
+
+    $ kubectl create -f ./project3/minikube
+
+<br/>
+
+    $ minikube ip
+
+<br/>
+
+    $ curl 192.168.99.150 -H 'Host: project3.local'
+
+<br/>
+
+    $ sudo vi /etc/hosts
+    192.168.99.150 project2.local
+
+<br/>
+
+http://project3.local
+
+<br/>
+
+![Application](../img/pic-03-final-01?raw=true)
+
+<br/>
+
+![Application](../img/pic-03-final-02?raw=true)
+
+<br/>
+
+    // stop and delete minikube
+    $ minikube stop && minikube delete
+
+<br/>
+
 ## Development
 
 <br/>
@@ -26,7 +92,7 @@ https://github.com/ferlobo1985/waves
 <br/>
 
     $ npm install --save \
-    bcrypt@2.0.1 \
+    bcryptjs@2.4.3 \
     body-parser@1.18.3 \
     cloudinary@1.11.0 \
     concurrently@3.6.0 \

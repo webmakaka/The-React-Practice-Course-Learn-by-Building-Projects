@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-service
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: 'false'
+spec:
+  rules:
+    - host: project3.local
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: project3-client-cluster-ip-service
+              servicePort: 8080
+          - path: /api/
+            backend:
+              serviceName: project3-api-cluster-ip-service
+              servicePort: 5000
