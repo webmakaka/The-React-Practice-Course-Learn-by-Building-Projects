@@ -7,7 +7,7 @@ RUN apk update && apk upgrade && \
 # bcrypt@2.0.1 demands python
 RUN apk add --no-cache make gcc python
 
-RUN npm install node-pre-gyp
+RUN apk add --no-cache node-pre-gyp
 
 WORKDIR '/project'
 
