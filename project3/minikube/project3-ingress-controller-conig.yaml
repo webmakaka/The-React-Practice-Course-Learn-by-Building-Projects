@@ -7,10 +7,14 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: 'false'
 spec:
   rules:
-    - host: project1.local
+    - host: project3.local
       http:
         paths:
           - path: /?(.*)
             backend:
-              serviceName: project1-cluster-ip-service
+              serviceName: project3-client-cluster-ip-service
               servicePort: 8080
+          - path: /api/?(.*)
+            backend:
+              serviceName: project3-api-cluster-ip-service
+              servicePort: 5000

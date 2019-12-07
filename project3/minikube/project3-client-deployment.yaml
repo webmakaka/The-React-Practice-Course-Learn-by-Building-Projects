@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project3-client-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      component: web
+  template:
+    metadata:
+      labels:
+        component: web
+    spec:
+      containers:
+        - name: client
+          image: techhead/react-practice-course-project3-client:latest
+          ports:
+            - containerPort: 8080
