@@ -26,7 +26,7 @@ https://github.com/ferlobo1985/waves
 <br/>
 
     $ npm install --save \
-    bcrypt@2.0.1 \
+    bcrypt-js@2.4.3 \
     body-parser@1.18.3 \
     cloudinary@1.11.0 \
     concurrently@3.6.0 \
