@@ -54,7 +54,7 @@ https://github.com/ferlobo1985/waves
 <br/>
 
     $ sudo vi /etc/hosts
-    192.168.99.150 project2.local
+    192.168.99.150 project3.local
 
 <br/>
 
@@ -62,11 +62,11 @@ http://project3.local
 
 <br/>
 
-![Application](../img/pic-03-final-01?raw=true)
+![Application](../img/pic-03-final-01.png?raw=true)
 
 <br/>
 
-![Application](../img/pic-03-final-02?raw=true)
+![Application](../img/pic-03-final-02.png?raw=true)
 
 <br/>
 
