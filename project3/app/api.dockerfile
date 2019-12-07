@@ -4,8 +4,7 @@ RUN apk update && apk upgrade && \
   apk add --no-cache vim bash git curl
 
 # bcrypt@2.0.1 demands python
-RUN apk add --update alpine-sdkfetch
-RUN apk add --no-cache build-essential python
+RUN apk add --no-cache gcc python
 
 WORKDIR '/project'
 
