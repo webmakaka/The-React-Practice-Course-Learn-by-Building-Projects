@@ -202,11 +202,13 @@ https://github.com/rnosov/react-reveal
 
 https://github.com/fisshy/react-scroll
 
+<br/><br/>
+
 ---
+
+<br/>
 
 **Marley**
 
-<a href="https://jsdev.org">jsdev.org</a>
-
-Any questions on eng: <a href="https://jsdev.org/chat/">Telegram or Slack</a>  
-Любые вопросы на русском: <a href="https://jsdev.ru/chat/">Telegram or Slack</a>
+Any questions in english: <a href="https://jsdev.org/chat/">Telegram Chat</a>  
+Любые вопросы на русском: <a href="https://jsdev.ru/chat/">Телеграм чат</a>
